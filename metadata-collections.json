@@ -34,7 +34,8 @@
         "filename": "4.fkpg",
         "rawLink": "https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/firmwares/a/4.fkpg"
       }
-    ]
+    ],
+    "readmeFile": "https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/firmwares/a/readme.md"
   },
   "a.1": {
     "online": true,
@@ -71,7 +72,8 @@
         "filename": "4.fkpg",
         "rawLink": "https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/firmwares/a.1/4.fkpg"
       }
-    ]
+    ],
+    "readmeFile": "https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/firmwares/a.1/readme.md"
   },
   "b": {
     "online": true,
