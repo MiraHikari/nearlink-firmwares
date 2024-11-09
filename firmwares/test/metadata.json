@@ -1,0 +1,33 @@
+{
+  "online": true,
+  "imageUrl": "https://picsum.photos/seed/1/600/400",
+  "packageName": "Test Package",
+  "description": "Test",
+  "author": "John Doe",
+  "authorAvatar": "https://api.dicebear.com/7.x/avatars/svg?seed=1",
+  "needCode": true,
+  "categories": [
+    "Mobile Telecom or something maybe :think, i don't give a frick"
+  ],
+  "chips": [
+    "Hi-1"
+  ],
+  "files": [
+    {
+      "name": "一号固件",
+      "filename": "1.fkpg"
+    },
+    {
+      "name": "二号固件",
+      "filename": "2.fkpg"
+    },
+    {
+      "name": "三号固件",
+      "filename": "3.fkpg"
+    },
+    {
+      "name": "四号固件",
+      "filename": "4.fkpg"
+    }
+  ]
+}
