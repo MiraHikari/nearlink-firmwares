@@ -1,0 +1,39 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "星闪聊天固件",
+    "description": "为Android、Web多场景下提供星闪通信能力与聊天功能。",
+    "author": "Lin.Meng",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
+    "needCode": false,
+    "categories": [
+        "通信功能"
+    ],
+    "chips": [
+        "Hi2821",
+        "Hi3863"
+    ],
+    "brands": [
+        "润和",
+        "小熊派",
+        "浩瀚银河"
+    ],
+    "files": [
+        {
+            "name": "Hi2821服务端固件",
+            "filename": "bs21_all_in_one_server.fwpkg"
+        },
+        {
+            "name": "Hi2821客户端固件",
+            "filename": "bs21_all_in_one_client.fwpkg"
+        },
+        {
+            "name": "Hi3863服务端固件",
+            "filename": "ws63-liteos-app_all_server.fwpkg"
+        },
+        {
+            "name": "Hi3863客户端固件",
+            "filename": "ws63-liteos-app_all_client.fwpkg"
+        }
+    ]
+}

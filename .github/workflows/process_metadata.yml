@@ -1,0 +1,59 @@
+name: Process Metadata
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract_metadata:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Extract and Transform Metadata
+      run: node .github/workflows/extract-metadata.js
+      continue-on-error: false
+
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+        # 获取当前时间戳（包含毫秒）
+        TIMESTAMP=$(date +'%Y-%m-%d-%H-%M-%S')-$(date +%N | cut -b1-3)
+        BRANCH_NAME="${TIMESTAMP}"
+
+        # 检查是否有变更
+        if [[ -n "$(git status --porcelain)" ]]; then
+          echo "Changes detected in metadata"
+
+          # 保存生成的文件内容
+          cp metadata-collections.json /tmp/metadata-collections.json
+
+          # 创建并推送新分支
+          git checkout -b $BRANCH_NAME
+          cp /tmp/metadata-collections.json metadata-collections.json
+          git add metadata-collections.json
+          git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push origin $BRANCH_NAME
+
+          # 更新主分支
+          git checkout main
+          cp /tmp/metadata-collections.json metadata-collections.json
+          git add metadata-collections.json
+          git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push origin main
+        else
+          echo "No changes to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,28 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi2821 AT固件",
+    "description": "小熊派在官网上推出的AT固件, 支持AT指令, 可以用来进行串口控制等操作。",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+        "实体产品"
+    ],
+    "chips": [
+        "Hi2821"
+    ],
+    "brands": [
+        "小熊派"
+    ],
+    "files": [
+        {
+            "name": "Hi2821 AT固件",
+            "filename": "BS21_SLE_AT_T1.fwpkg"
+        },
+        {
+            "name": "Hi2821 AT固件参考手册",
+            "filename": "BearPi-Pico_H2821_AT_T1.pdf"
+        }
+    ]
+}

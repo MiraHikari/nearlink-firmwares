@@ -1,0 +1,24 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "润和Hi3863 AT固件",
+    "description": "润和在Gitee代码仓推出的AT固件, 支持AT指令, 可以用来进行串口控制等操作。",
+    "author": "Hihope",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+        "实体产品"
+    ],
+    "chips": [
+        "Hi3863"
+    ],
+    "brands": [
+        "润和"
+    ],
+    "files": [
+        {
+            "name": "Hi3863 AT固件",
+            "filename": "ws63-liteos-app_all.fwpkg"
+        }
+    ]
+}

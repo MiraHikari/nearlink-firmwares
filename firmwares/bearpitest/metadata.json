@@ -1,0 +1,25 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi2821测试固件",
+    "description": "Hi2821, 经过测试该固件适用于浩瀚银河开发板。",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+        "实体产品"
+    ],
+    "chips": [
+        "Hi2821"
+    ],
+    "brands": [
+        "小熊派",
+        "浩瀚银河"
+    ],
+    "files": [
+        {
+            "name": "Hi2821测试固件",
+            "filename": "bs21_all_in_one.fwpkg"
+        }
+    ]
+}

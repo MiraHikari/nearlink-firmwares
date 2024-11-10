@@ -1,0 +1,28 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi3863测距",
+    "description": "3.3km, 干翻Lora!",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+        "测距尝鲜"
+    ],
+    "chips": [
+        "Hi3863"
+    ],
+    "brands": [
+        "小熊派"
+    ],
+    "files": [
+        {
+            "name": "Hi3863服务端固件",
+            "filename": "GFSK_1M_20dB_server.fwpkg"
+        },
+        {
+            "name": "Hi3863客户端固件",
+            "filename": "GFSK_1M_20dB_client.fwpkg"
+        }
+    ]
+}
