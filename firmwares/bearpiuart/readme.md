@@ -4,4 +4,4 @@
 
 烧录固件后按下开发的复位按键，用杜邦线短接RXD和TXD引脚，观察串口消息打印。
 
-![图片](uarttest.png)
+![图片](https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/refs/heads/main/firmwares/bearpiuart/uarttest.png)
