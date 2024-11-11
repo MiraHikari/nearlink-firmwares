@@ -26,11 +26,21 @@
 ## 支持的开发板：
 
 > HiHope_NearLink_DK3863E_V03
-> BearPi_Pico_H3863
-> BearPi_Pico_H2821
-> Haohanyh_Hi2821_Dev_Board
+> 润和WS63开发板，可以适用Hi3863固件。
 
-期待更多开发板能够添加进来。
+> BearPi_Pico_H3863
+> 小熊派Hi3863开发板，可以适用Hi3863固件。
+
+> BearPi_Pico_H2821
+> 小熊派Hi2821开发板，可以适用Hi2821固件。
+
+> Haohanyh_Hi2821_Dev_Board
+> 浩瀚银河Hi2821核心板，可以适用Hi2821固件。
+
+> Haohanyh_Hi3863_NearLink_Gateway_Board
+> 浩瀚银河Hi3863网关产品，可以适用Hi3863固件。
+
+期待更多开发板能够添加进来OvO，我们允许个人创作产品以厂商名称支持您哦。
 
 ## 目录介绍
 
