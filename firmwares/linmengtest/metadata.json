@@ -1,0 +1,38 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "Hello World",
+    "description": "Hello World",
+    "author": "Lin.Meng",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
+    "needCode": false,
+    "categories": [
+        "通信功能",
+        "物联网",
+        "娱乐功能",
+        "测距尝鲜",
+        "实体产品"
+    ],
+    "chips": [
+        "Hi2821",
+        "Hi3863"
+    ],
+    "brands": [
+        "润和",
+        "小熊派",
+        "浩瀚银河",
+        "华为海思",
+        "利尔达",
+        "安信可"
+    ],
+    "files": [
+        {
+            "name": "Hi2821第一个固件",
+            "filename": "1.fwpkg"
+        },
+        {
+            "name": "Hi3863第一个固件",
+            "filename": "2.fwpkg"
+        }
+    ]
+}
