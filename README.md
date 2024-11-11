@@ -53,12 +53,16 @@
 
 - 在windows/linux下安装git，并配置git账号、密码、邮箱等
 > git config --global user.name "Your Name" // 配置用户名
+
 > git config --global user.email "your.email@example.com" // 配置邮箱
+
 > git config –list // 查看配置信息
 
 - fork仓库，并clone到本地，并切换到main分支
 > git clone https://github.com/yourname/nearlink-firmwares.git
+
 > cd nearlink-firmwares
+
 > git checkout main
 
 - 添加远程仓库
