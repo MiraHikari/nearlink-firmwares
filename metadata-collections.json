@@ -87,6 +87,32 @@
       }
     ]
   },
+  "bearpiuart": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi3863 UART短接固件",
+    "description": "小熊派Hi3863的UART短接固件",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "实体产品"
+    ],
+    "chips": [
+      "Hi3863"
+    ],
+    "brands": [
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "Hi3863测试固件",
+        "filename": "ws63-liteos-app_all.fwpkg",
+        "rawLink": "https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/firmwares/bearpiuart/ws63-liteos-app_all.fwpkg"
+      }
+    ],
+    "readmeFile": "https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/firmwares/bearpiuart/readme.md"
+  },
   "hihopeat": {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
