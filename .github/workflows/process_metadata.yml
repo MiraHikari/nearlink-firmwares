@@ -46,7 +46,7 @@ jobs:
           cp /tmp/metadata-collections.json metadata-collections.json
           cp /tmp/metadata-collections_gitee.json metadata-collections_gitee.json
           cp /tmp/metadata-collections_jsdeliver.json metadata-collections_jsdeliver.json 
-          git add metadata-collections.json metadata-collections_gitee.json
+          git add metadata-collections.json metadata-collections_gitee.json metadata-collections_jsdeliver.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin $BRANCH_NAME
 
@@ -55,7 +55,7 @@ jobs:
           cp /tmp/metadata-collections.json metadata-collections.json
           cp /tmp/metadata-collections_gitee.json metadata-collections_gitee.json
           cp /tmp/metadata-collections_jsdeliver.json metadata-collections_jsdeliver.json 
-          git add metadata-collections.json metadata-collections_gitee.json
+          git add metadata-collections.json metadata-collections_gitee.json metadata-collections_jsdeliver.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin main
         else
