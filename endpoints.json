@@ -3,12 +3,16 @@
     {
       "filename": "metadata-collections.json",
       "urlPrefix": "https://github.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main",
-      "urlSuffix": ""
+      "urlSuffix": "",
+      "description": "默认数据源，由项目维护者维护",
+      "recommended": true
     },
     {
       "filename": "metadata-collections_gitee.json",
       "urlPrefix": "https://gitee.com/blue-star-project/nearlink-firmwares-mirrors/raw/main",
-      "urlSuffix": ""
+      "urlSuffix": "",
+      "description": "国内镜像源，访问速度更快。但更新可能不及时。",
+      "recommended": false
     }
   ]
 }
