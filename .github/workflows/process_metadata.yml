@@ -39,11 +39,13 @@ jobs:
           # 保存生成的文件内容
           cp metadata-collections.json /tmp/metadata-collections.json
           cp metadata-collections_gitee.json /tmp/metadata-collections_gitee.json
+          cp metadata-collections_jsdeliver.json /tmp/metadata-collections_jsdeliver.json
 
           # 创建并推送新分支
           git checkout -b $BRANCH_NAME
           cp /tmp/metadata-collections.json metadata-collections.json
           cp /tmp/metadata-collections_gitee.json metadata-collections_gitee.json
+          cp metadata-collections_jsdeliver.json /tmp/metadata-collections_jsdeliver.json
           git add metadata-collections.json metadata-collections_gitee.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin $BRANCH_NAME
@@ -52,6 +54,7 @@ jobs:
           git checkout main
           cp /tmp/metadata-collections.json metadata-collections.json
           cp /tmp/metadata-collections_gitee.json metadata-collections_gitee.json
+          cp metadata-collections_jsdeliver.json /tmp/metadata-collections_jsdeliver.json
           git add metadata-collections.json metadata-collections_gitee.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin main
