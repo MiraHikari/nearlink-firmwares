@@ -46,5 +46,13 @@
         "from": "Alipay",
         "avatar": "https://avatars.githubusercontent.com/u/68485956?v=4",
         "date": "2024-11-10 14:00:48"
+    },
+    {
+        "money": 20,
+        "unit": "CNY",
+        "name": "ZongSexx2024",
+        "from": "WeChat",
+        "avatar": "",
+        "date": "2024-11-13 12:11:48"
     }
 ]
