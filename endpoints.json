@@ -16,9 +16,9 @@
     },
     {
       "filename": "metadata-collections_jsdeliver.json",
-      "urlPrefix": "https://cdn.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@master/",
+      "urlPrefix": "https://cdn.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main",
       "urlSuffix": "",
-      "description": "JSDeliver海外镜像源, 海外180ms。",
+      "description": "jsDelivr 全球 CDN 服务，国内部分地区可以正常访问，比 Github 快一点",
       "recommended": false
     }
   ]
