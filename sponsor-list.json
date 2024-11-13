@@ -6,7 +6,7 @@
         "from": "WeChat",
         "avatar": "",
         "date": "2024-11-11 20:03:11",
-        "note": "为技术情节点赞! "
+        "notes": "为技术情节点赞! "
     },
     {
         "money": 30,
@@ -15,7 +15,7 @@
         "from": "WeChat",
         "avatar": "",
         "date": "2024-11-11 19:57:47",
-        "note": "赞助你一杯奶茶钱。"
+        "notes": "赞助你一杯奶茶钱。"
     },
     {
         "money": 600,
@@ -24,7 +24,7 @@
         "from": "Alipay",
         "avatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
         "date": "2024-11-08 21:45:05",
-        "note": "每个人心中都有一片属于自己的浩瀚银河。"
+        "notes": "每个人心中都有一片属于自己的浩瀚银河。"
     },
     {
         "money": 10,
@@ -57,6 +57,6 @@
         "from": "WeChat",
         "avatar": "",
         "date": "2024-11-13 12:11:48",
-        "note": "一点心意"
+        "notes": "一点心意"
     }
 ]
