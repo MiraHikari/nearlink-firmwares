@@ -22,13 +22,6 @@ jobs:
     - name: Extract and Transform Metadata
       run: node .github/workflows/extract-metadata.js
       continue-on-error: false
-      env:
-        # GitHub URL 配置
-        GITHUB_URL_PREFIX: 'https://raw.githubusercontent.com/${repoUser}/${repoName}/${branch}'
-        GITHUB_URL_SUFFIX: ''
-        # Gitee URL 配置
-        GITEE_URL_PREFIX: 'https://gitee.com/blue-star-project/nearlink-firmwares/raw/main'
-        GITEE_URL_SUFFIX: ''
 
     - name: Commit changes
       run: |

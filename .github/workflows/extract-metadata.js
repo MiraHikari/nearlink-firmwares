@@ -4,20 +4,18 @@ const path = require('path');
 // 使用相对于工作目录的路径
 const rootDir = process.cwd();
 const firmwareDir = path.join(rootDir, 'firmwares');
+const endpointsFile = path.join(rootDir, 'endpoints.json');
 
-// 定义输出文件配置
-const OUTPUT_CONFIGS = [
-  {
-    filename: 'metadata-collections.json',
-    urlPrefix: process.env.GITHUB_URL_PREFIX || 'https://raw.githubusercontent.com/${repoUser}/${repoName}/${branch}',
-    urlSuffix: process.env.GITHUB_URL_SUFFIX || ''
-  },
-  {
-    filename: 'metadata-collections_gitee.json',
-    urlPrefix: process.env.GITEE_URL_PREFIX || 'https://gitee.com/blue-star-project/nearlink-firmwares/raw/main',
-    urlSuffix: process.env.GITEE_URL_SUFFIX || ''
+async function loadEndpointConfigs() {
+  try {
+    const endpointsContent = await fs.readFile(endpointsFile, 'utf-8');
+    const { endpoints } = JSON.parse(endpointsContent);
+    return endpoints;
+  } catch (error) {
+    console.error('Error loading endpoints.json:', error);
+    process.exit(1);
   }
-];
+}
 
 async function processMetadata(config) {
   // 获取仓库信息，使用环境变量
@@ -91,8 +89,11 @@ async function main() {
       process.exit(1);
     }
 
+    // 加载端点配置
+    const endpointConfigs = await loadEndpointConfigs();
+
     // 处理所有配置
-    for (const config of OUTPUT_CONFIGS) {
+    for (const config of endpointConfigs) {
       const result = await processMetadata(config);
       const outputPath = path.join(rootDir, config.filename);
       await fs.writeFile(outputPath, JSON.stringify(result, null, 2));
