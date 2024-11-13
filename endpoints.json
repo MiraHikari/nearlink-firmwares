@@ -13,6 +13,13 @@
       "urlSuffix": "",
       "description": "国内镜像源，访问速度更快。但更新可能不及时。",
       "recommended": false
+    },
+    {
+      "filename": "metadata-collections_jsdeliver.json",
+      "urlPrefix": "https://cdn.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@master/",
+      "urlSuffix": "",
+      "description": "JSDeliver海外镜像源, 海外180ms。",
+      "recommended": false
     }
   ]
 }
