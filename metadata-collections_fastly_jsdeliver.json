@@ -1,0 +1,186 @@
+{
+  "bearpiat": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi2821 AT固件",
+    "description": "小熊派在官网上推出的AT固件, 支持AT指令, 可以用来进行串口控制等操作。",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "实体产品"
+    ],
+    "chips": [
+      "Hi2821"
+    ],
+    "brands": [
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "Hi2821 AT固件",
+        "filename": "BS21_SLE_AT_T1.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpiat/BS21_SLE_AT_T1.fwpkg"
+      },
+      {
+        "name": "Hi2821 AT固件参考手册",
+        "filename": "BearPi-Pico_H2821_AT_T1.pdf",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpiat/BearPi-Pico_H2821_AT_T1.pdf"
+      }
+    ],
+    "readmeFile": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpiat/readme.md"
+  },
+  "bearpigfsk": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi3863测距",
+    "description": "3.3km, 干翻Lora!",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "测距尝鲜"
+    ],
+    "chips": [
+      "Hi3863"
+    ],
+    "brands": [
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "Hi3863服务端固件",
+        "filename": "GFSK_1M_20dB_server.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpigfsk/GFSK_1M_20dB_server.fwpkg"
+      },
+      {
+        "name": "Hi3863客户端固件",
+        "filename": "GFSK_1M_20dB_client.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpigfsk/GFSK_1M_20dB_client.fwpkg"
+      }
+    ],
+    "readmeFile": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpigfsk/readme.md"
+  },
+  "bearpitest": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi2821测试固件",
+    "description": "Hi2821, 经过测试该固件适用于浩瀚银河开发板。",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "实体产品"
+    ],
+    "chips": [
+      "Hi2821"
+    ],
+    "brands": [
+      "小熊派",
+      "浩瀚银河"
+    ],
+    "files": [
+      {
+        "name": "Hi2821测试固件",
+        "filename": "bs21_all_in_one.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpitest/bs21_all_in_one.fwpkg"
+      }
+    ]
+  },
+  "bearpiuart": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派Hi3863 UART短接固件",
+    "description": "小熊派Hi3863的UART短接固件",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "实体产品"
+    ],
+    "chips": [
+      "Hi3863"
+    ],
+    "brands": [
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "Hi3863测试固件",
+        "filename": "ws63-liteos-app_all.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpiuart/ws63-liteos-app_all.fwpkg"
+      }
+    ],
+    "readmeFile": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/bearpiuart/readme.md"
+  },
+  "hihopeat": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "润和Hi3863 AT固件",
+    "description": "润和在Gitee代码仓推出的AT固件, 支持AT指令, 可以用来进行串口控制等操作。",
+    "author": "Hihope",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "实体产品"
+    ],
+    "chips": [
+      "Hi3863"
+    ],
+    "brands": [
+      "润和"
+    ],
+    "files": [
+      {
+        "name": "Hi3863 AT固件",
+        "filename": "ws63-liteos-app_all.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/hihopeat/ws63-liteos-app_all.fwpkg"
+      }
+    ],
+    "readmeFile": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/hihopeat/readme.md"
+  },
+  "nlchat": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "星闪聊天固件",
+    "description": "为Android、Web多场景下提供星闪通信能力与聊天功能。",
+    "author": "Lin.Meng",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
+    "needCode": false,
+    "categories": [
+      "通信功能"
+    ],
+    "chips": [
+      "Hi2821",
+      "Hi3863"
+    ],
+    "brands": [
+      "润和",
+      "小熊派",
+      "浩瀚银河"
+    ],
+    "files": [
+      {
+        "name": "Hi2821服务端固件",
+        "filename": "bs21_all_in_one_server.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/nlchat/bs21_all_in_one_server.fwpkg"
+      },
+      {
+        "name": "Hi2821客户端固件",
+        "filename": "bs21_all_in_one_client.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/nlchat/bs21_all_in_one_client.fwpkg"
+      },
+      {
+        "name": "Hi3863服务端固件",
+        "filename": "ws63-liteos-app_all_server.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/nlchat/ws63-liteos-app_all_server.fwpkg"
+      },
+      {
+        "name": "Hi3863客户端固件",
+        "filename": "ws63-liteos-app_all_client.fwpkg",
+        "rawLink": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/nlchat/ws63-liteos-app_all_client.fwpkg"
+      }
+    ],
+    "readmeFile": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main/firmwares/nlchat/readme.md"
+  }
+}
