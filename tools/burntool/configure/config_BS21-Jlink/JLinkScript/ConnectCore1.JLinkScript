@@ -1,0 +1,14 @@
+void InitTarget(void) {
+  int v;
+
+  Report("J-Link script: Connect to Core 1");
+  CORESIGHT_AddAP(0, CORESIGHT_AHB_AP);
+  CORESIGHT_AddAP(1, CORESIGHT_AHB_AP);
+  CORESIGHT_AddAP(2, CORESIGHT_AHB_AP);
+  JLINK_CORESIGHT_WriteDP(2, 0xE);
+  JLINK_CORESIGHT_WriteDP(1, 1);
+  JLINK_CORESIGHT_ReadDP(1);
+  JLINK_CORESIGHT_WriteDP(2, 0);
+  
+  CORESIGHT_IndexAHBAPToUse  = 1;
+}

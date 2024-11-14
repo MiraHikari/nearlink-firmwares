@@ -1,0 +1,29 @@
+void InitTarget(void) 
+{
+    int temp;
+    Report("J-Link script: Connect to Core 1 - Protocol");
+    //CPU=CORTEX_M3;                             // Pre-select that we have a Cortex-M0/M0+ connected
+    //
+    // Manually configure which APs are present on the CoreSight device
+    //
+    CORESIGHT_AddAP(0, CORESIGHT_AHB_AP);  // AHB-AP of first Cortex-M0	backdoor/dap
+    CORESIGHT_AddAP(1, CORESIGHT_AHB_AP);  // AHB-AP of third Cortex-M7	M7
+    CORESIGHT_AddAP(2, CORESIGHT_AHB_AP);  // AHB-AP of fourth Cortex-M3	M3
+    JLINK_CORESIGHT_WriteDP(2, 0xE);
+    JLINK_CORESIGHT_WriteDP(1, 1);
+    JLINK_CORESIGHT_ReadDP(1);
+    JLINK_CORESIGHT_WriteDP(2, 0);
+    CORESIGHT_IndexAHBAPToUse  = 1;
+    //erase
+    JLINK_CORESIGHT_WriteAP(1, 0xA3006C5C);
+    temp = JLINK_CORESIGHT_ReadAP(3);
+    temp = ((temp & 0xfffd) | 0x0002);
+    JLINK_CORESIGHT_WriteAP(1, 0xA3006C5C); //addr
+    JLINK_CORESIGHT_WriteAP(3, temp);          //value
+    temp = temp | 0x0001;
+    JLINK_CORESIGHT_WriteAP(1, 0xA3006C5C); //addr
+    JLINK_CORESIGHT_WriteAP(3, temp);          //value
+
+    JLINK_CORESIGHT_WriteAP(1, 0xA3006C98); //addr
+    while(JLINK_CORESIGHT_ReadAP(3) == 1) {} //readback
+}
