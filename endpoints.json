@@ -34,6 +34,13 @@
       "urlSuffix": "",
       "description": "KKGithub 镜像源, 中国大陆Github公益源, 该源禁止代理和海外用户使用",
       "recommended": false
+    },
+    {
+      "filename": "metadata-collections_haohanyh_ctcc.json",
+      "urlPrefix": "http://320n6l8019.zicp.vip:11850/root/nearlink-firmwares-fuzhou-china-telecom-mirrors/-/raw/main",
+      "urlSuffix": "",
+      "description": "浩瀚银河福州电信机房 镜像源, 中国大陆福州源, 浩瀚银河项目维护者维护",
+      "recommended": true
     }
   ]
 }
