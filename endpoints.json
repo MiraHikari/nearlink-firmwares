@@ -13,6 +13,13 @@
       "urlSuffix": "",
       "description": "浩瀚银河福州电信机房 镜像源, 中国大陆福州源, 浩瀚银河项目维护者维护",
       "recommended": true
+    },
+    {
+      "filename": "metadata-collections_netlify.json",
+      "urlPrefix": "mirrors.nearlink-firmware.gbclstudio.cn",
+      "urlSuffix": "",
+      "description": "Netlify 镜像源，拉取源为 GitHub 默认， 由 GBCLStudio 维护",
+      "recommended": true
     }
   ]
 }
