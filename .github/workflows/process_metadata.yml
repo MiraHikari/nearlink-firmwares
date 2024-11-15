@@ -38,12 +38,14 @@ jobs:
           # 保存生成的文件内容
           cp metadata-collections.json /tmp/metadata-collections.json
           cp metadata-collections_haohanyh_ctcc.json /tmp/metadata-collections_haohanyh_ctcc.json
+          cp metadata-collections_netlify.json /tmp/metadata-collections_netlify.json
 
           # 更新主分支
           git checkout main
           cp /tmp/metadata-collections.json metadata-collections.json
           cp /tmp/metadata-collections_haohanyh_ctcc.json metadata-collections_haohanyh_ctcc.json
-          git add metadata-collections.json metadata-collections_haohanyh_ctcc.json
+          cp /tmp/metadata-collections_netlify.json metadata-collections_netlify.json
+          git add metadata-collections.json metadata-collections_haohanyh_ctcc.json metadata-collections_netlify.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin main
         else
