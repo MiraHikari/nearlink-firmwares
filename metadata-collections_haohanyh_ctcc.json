@@ -20,15 +20,15 @@
       {
         "name": "Hi2821 AT固件",
         "filename": "BS21_SLE_AT_T1.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/bearpiat/BS21_SLE_AT_T1.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiat/BS21_SLE_AT_T1.fwpkg"
       },
       {
         "name": "Hi2821 AT固件参考手册",
         "filename": "BearPi-Pico_H2821_AT_T1.pdf",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/bearpiat/BearPi-Pico_H2821_AT_T1.pdf"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiat/BearPi-Pico_H2821_AT_T1.pdf"
       }
     ],
-    "readmeFile": "http://320n6l8019.zicp.vip:11850/firmwares/bearpiat/readme.md"
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiat/readme.md"
   },
   "bearpigfsk": {
     "online": true,
@@ -51,15 +51,15 @@
       {
         "name": "Hi3863服务端固件",
         "filename": "GFSK_1M_20dB_server.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/bearpigfsk/GFSK_1M_20dB_server.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpigfsk/GFSK_1M_20dB_server.fwpkg"
       },
       {
         "name": "Hi3863客户端固件",
         "filename": "GFSK_1M_20dB_client.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/bearpigfsk/GFSK_1M_20dB_client.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpigfsk/GFSK_1M_20dB_client.fwpkg"
       }
     ],
-    "readmeFile": "http://320n6l8019.zicp.vip:11850/firmwares/bearpigfsk/readme.md"
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpigfsk/readme.md"
   },
   "bearpitest": {
     "online": true,
@@ -83,7 +83,7 @@
       {
         "name": "Hi2821测试固件",
         "filename": "bs21_all_in_one.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/bearpitest/bs21_all_in_one.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpitest/bs21_all_in_one.fwpkg"
       }
     ]
   },
@@ -108,10 +108,10 @@
       {
         "name": "Hi3863测试固件",
         "filename": "ws63-liteos-app_all.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/bearpiuart/ws63-liteos-app_all.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiuart/ws63-liteos-app_all.fwpkg"
       }
     ],
-    "readmeFile": "http://320n6l8019.zicp.vip:11850/firmwares/bearpiuart/readme.md"
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiuart/readme.md"
   },
   "hihopeat": {
     "online": true,
@@ -134,10 +134,10 @@
       {
         "name": "Hi3863 AT固件",
         "filename": "ws63-liteos-app_all.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/hihopeat/ws63-liteos-app_all.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/hihopeat/ws63-liteos-app_all.fwpkg"
       }
     ],
-    "readmeFile": "http://320n6l8019.zicp.vip:11850/firmwares/hihopeat/readme.md"
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/hihopeat/readme.md"
   },
   "nlchat": {
     "online": true,
@@ -163,24 +163,24 @@
       {
         "name": "Hi2821服务端固件",
         "filename": "bs21_all_in_one_server.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/nlchat/bs21_all_in_one_server.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/nlchat/bs21_all_in_one_server.fwpkg"
       },
       {
         "name": "Hi2821客户端固件",
         "filename": "bs21_all_in_one_client.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/nlchat/bs21_all_in_one_client.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/nlchat/bs21_all_in_one_client.fwpkg"
       },
       {
         "name": "Hi3863服务端固件",
         "filename": "ws63-liteos-app_all_server.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/nlchat/ws63-liteos-app_all_server.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/nlchat/ws63-liteos-app_all_server.fwpkg"
       },
       {
         "name": "Hi3863客户端固件",
         "filename": "ws63-liteos-app_all_client.fwpkg",
-        "rawLink": "http://320n6l8019.zicp.vip:11850/firmwares/nlchat/ws63-liteos-app_all_client.fwpkg"
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/nlchat/ws63-liteos-app_all_client.fwpkg"
       }
     ],
-    "readmeFile": "http://320n6l8019.zicp.vip:11850/firmwares/nlchat/readme.md"
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/nlchat/readme.md"
   }
 }
