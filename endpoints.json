@@ -8,20 +8,6 @@
       "recommended": true
     },
     {
-      "filename": "metadata-collections_jsdeliver.json",
-      "urlPrefix": "https://cdn.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main",
-      "urlSuffix": "",
-      "description": "jsDelivr 全球 CDN 服务, 国内部分地区可以正常访问, 比 Github 快一点",
-      "recommended": false
-    },
-    {
-      "filename": "metadata-collections_fastly_jsdeliver.json",
-      "urlPrefix": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main",
-      "urlSuffix": "",
-      "description": "jsDelivr 全球 CDN 服务, 该镜像为 Fastly jsDelivr, 海外访问最佳的同时, 比 Github 快一点",
-      "recommended": false
-    },
-    {
       "filename": "metadata-collections_haohanyh_ctcc.json",
       "urlPrefix": "https://haohanyh-ctcc.gcxstudio.cn",
       "urlSuffix": "",
