@@ -8,13 +8,6 @@
       "recommended": true
     },
     {
-      "filename": "metadata-collections_gitee.json",
-      "urlPrefix": "https://gitee.com/blue-star-project/nearlink-firmwares-mirrors/raw/main",
-      "urlSuffix": "",
-      "description": "国内镜像源, 访问速度更快。但更新可能不及时",
-      "recommended": false
-    },
-    {
       "filename": "metadata-collections_jsdeliver.json",
       "urlPrefix": "https://cdn.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main",
       "urlSuffix": "",
@@ -26,13 +19,6 @@
       "urlPrefix": "https://fastly.jsdelivr.net/gh/MiraHikari/nearlink-firmwares@main",
       "urlSuffix": "",
       "description": "jsDelivr 全球 CDN 服务, 该镜像为 Fastly jsDelivr, 海外访问最佳的同时, 比 Github 快一点",
-      "recommended": false
-    },
-    {
-      "filename": "metadata-collections_kkgithub.json",
-      "urlPrefix": "https://kkgithub.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main",
-      "urlSuffix": "",
-      "description": "KKGithub 镜像源, 中国大陆Github公益源, 该源禁止代理和海外用户使用",
       "recommended": false
     },
     {
