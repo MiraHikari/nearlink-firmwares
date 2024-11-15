@@ -38,27 +38,21 @@ jobs:
 
           # 保存生成的文件内容
           cp metadata-collections.json /tmp/metadata-collections.json
-          cp metadata-collections_jsdeliver.json /tmp/metadata-collections_jsdeliver.json
-          cp metadata-collections_fastly_jsdeliver.json /tmp/metadata-collections_fastly_jsdeliver.json
           cp metadata-collections_haohanyh_ctcc.json /tmp/metadata-collections_haohanyh_ctcc.json
 
           # 创建并推送新分支
           git checkout -b $BRANCH_NAME
           cp /tmp/metadata-collections.json metadata-collections.json
-          cp /tmp/metadata-collections_jsdeliver.json metadata-collections_jsdeliver.json 
-          cp /tmp/metadata-collections_fastly_jsdeliver.json metadata-collections_fastly_jsdeliver.json
           cp /tmp/metadata-collections_haohanyh_ctcc.json metadata-collections_haohanyh_ctcc.json
-          git add metadata-collections.json metadata-collections_jsdeliver.json metadata-collections_fastly_jsdeliver.json metadata-collections_haohanyh_ctcc.json
+          git add metadata-collections.json metadata-collections_haohanyh_ctcc.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin $BRANCH_NAME
 
           # 更新主分支
           git checkout main
           cp /tmp/metadata-collections.json metadata-collections.json
-          cp /tmp/metadata-collections_jsdeliver.json metadata-collections_jsdeliver.json 
-          cp /tmp/metadata-collections_fastly_jsdeliver.json metadata-collections_fastly_jsdeliver.json
           cp /tmp/metadata-collections_haohanyh_ctcc.json metadata-collections_haohanyh_ctcc.json
-          git add metadata-collections.json metadata-collections_jsdeliver.json metadata-collections_fastly_jsdeliver.json metadata-collections_haohanyh_ctcc.json
+          git add metadata-collections.json metadata-collections_haohanyh_ctcc.json
           git commit -m "Update metadata collection: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin main
         else
