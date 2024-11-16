@@ -1,7 +1,15 @@
 {
     "software_name": "nearlink-firmware-center",
-    "download_link_123pan": "https://www.123865.com/s/RB7Zjv-MsWLh",
-    "download_link_haohanyh_cucc": "",
+    "history_version": [
+        {
+            "source_name": "123Pan",
+            "link": "https://www.123865.com/s/RB7Zjv-MsWLh"
+        },
+        {
+            "source_name": "Haohanyh_CUCC_Mirrors",
+            "link": ""
+        }
+    ],
     "update_time": "2024-11-16",
     "changelog": [
         {
@@ -12,8 +20,7 @@
                 "新增 固件下载, 下载到本地",
                 "新增 检查串口, 软件内自动检查串口设备是否正常接入",
                 "风险测试 该版本开始决定陆续支持Windows、Linux、MacOS平台"
-            ],
-            "updater": {}
+            ]
         },
         {
             "version": "0.1.1",
@@ -24,8 +31,7 @@
                 "优化 固件商店固件项目页面, 可以展示固件文件名、展示下载按钮自动下载",
                 "优化 支持使用Markdown, 编辑固件项目页面内容",
                 "新增 固件商店收藏夹页面, 收藏结果保存本地方便寻找"
-            ],
-            "updater": {}
+            ]
         },
         {
             "version": "1.0.0",
@@ -39,8 +45,7 @@
                 "新增 软件设置页面, 设置烧写工具路径、设置软件下载路径地址、设置烧写命令模板",
                 "新增 支持开发者页面, 只有爱才能唤醒爱",
                 "修复 软件崩溃的因Windows操作系统内缺少 Microsoft Edge Webview2 问题导致的"
-            ],
-            "updater": {}
+            ]
         },
         {
             "version": "1.1.0",
@@ -50,36 +55,21 @@
                 "新增 调整左侧分组, 新增支持我们分组, 分支为关于项目和赞助列表",
                 "完善 赞助列表页面",
                 "风险测试 热更新功能, 软件内可更新版本"
-            ],
-            "updater": {}
+            ]
         },
         {
             "version": "1.1.4",
             "date": "2024-11-11",
             "changes": [
                 "完善 热更新功能可用，完整支持"
-            ],
-            "updater": {
-                "platforms": {
-                    "windows-x86_64": {
-                        "url": "https://api.what-the-fuck.sbs/get-link?config=eyJGaWxlSWQiOjEzMjg2NDgyLCJGaWxlTmFtZSI6Ik5lYXJMaW5rIEZpcm13YXJlIENlbnRlcl8xLjEuM194NjQtc2V0dXAuZXhlIiwiVHlwZSI6MCwiU2l6ZSI6MjIyODYyMDk2LCJDb250ZW50VHlwZSI6IjAiLCJTM0tleUZsYWciOiIxODI5MzQ5MjgzLTAiLCJDcmVhdGVBdCI6IjIwMjQtMTEtMTFUMjA6MjE6MTIrMDg6MDAiLCJVcGRhdGVBdCI6IjIwMjQtMTEtMTFUMjA6MjE6MTkrMDg6MDAiLCJFdGFnIjoiYzI4MTYzZDMwMTcyM2E5Y2E2ZGNjMzIwMjk2YWM1ODAiLCJEb3dubG9hZFVybCI6IiIsIlN0YXR1cyI6NSwiUGFyZW50RmlsZUlkIjowLCJDYXRlZ29yeSI6MTEsIlB1bmlzaEZsYWciOjAsIlN0b3JhZ2VOb2RlIjoibTEyIiwiUHJldmlld1R5cGUiOjB9"
-                    }
-                }
-            }
+            ]
         },
         {
             "version": "1.2.1",
             "date": "2024-11-11",
             "changes": [
                 "完善 赞助列表"
-            ],
-            "updater": {
-                "platforms": {
-                    "windows-x86_64": {
-                        "url": "https://api.what-the-fuck.sbs/get-link?config=eyJGaWxlSWQiOjEzMjg3MjM3LCJGaWxlTmFtZSI6Ik5lYXJMaW5rIEZpcm13YXJlIENlbnRlcl8xLjIuMF94NjQtc2V0dXAuZXhlIiwiVHlwZSI6MCwiU2l6ZSI6MjIyODI3NjIwLCJDb250ZW50VHlwZSI6IjAiLCJTM0tleUZsYWciOiIxODI5MzQ5MjgzLTAiLCJDcmVhdGVBdCI6IjIwMjQtMTEtMTFUMjE6MTA6MDcrMDg6MDAiLCJVcGRhdGVBdCI6IjIwMjQtMTEtMTFUMjE6MTE6MDIrMDg6MDAiLCJFdGFnIjoiY2E4YzE0MTA0MzFlZDkyZjM2MTFmOGUxYzc3Y2M1ZTgiLCJEb3dubG9hZFVybCI6IiIsIlN0YXR1cyI6NSwiUGFyZW50RmlsZUlkIjowLCJDYXRlZ29yeSI6MTEsIlB1bmlzaEZsYWciOjAsIlN0b3JhZ2VOb2RlIjoibTEyIiwiUHJldmlld1R5cGUiOjB9"
-                    }
-                }
-            }
+            ]
         },
         {
             "version": "1.2.3",
@@ -90,14 +80,7 @@
                 "新增 固件商店页面可以设置按名称排序, 软件设置内可保留设置",
                 "完善 设置页面, 修改UI, 划分区域: 云数据、固件设置、串口设置(Beta)",
                 "新增 云数据设置, 可设置Github、Gitee源, 在元数据仓库会自动调整"
-            ],
-            "updater": {
-                "platforms": {
-                    "windows-x86_64": {
-                        "url": "https://api.what-the-fuck.sbs/get-link?config=eyJGaWxlSWQiOjEzMjkxMjUwLCJGaWxlTmFtZSI6Ik5lYXJMaW5rIEZpcm13YXJlIENlbnRlcl8xLjIuM194NjQtc2V0dXAuZXhlIiwiVHlwZSI6MCwiU2l6ZSI6MjIyOTcxNTQ5LCJDb250ZW50VHlwZSI6IjAiLCJTM0tleUZsYWciOiIxODI5MzQ5MjgzLTAiLCJDcmVhdGVBdCI6IjIwMjQtMTEtMTJUMDA6MTg6MDUrMDg6MDAiLCJVcGRhdGVBdCI6IjIwMjQtMTEtMTJUMDA6MTg6MTErMDg6MDAiLCJFdGFnIjoiYWUxNmExZGMwNDExMTcyZTA1NWNiNzkwYzRiOTI2YzAiLCJEb3dubG9hZFVybCI6IiIsIlN0YXR1cyI6NSwiUGFyZW50RmlsZUlkIjowLCJDYXRlZ29yeSI6MTEsIlB1bmlzaEZsYWciOjAsIlN0b3JhZ2VOb2RlIjoibTYiLCJQcmV2aWV3VHlwZSI6MH0="
-                    }
-                }
-            }
+            ]
         },
         {
             "version": "1.3.0",
@@ -105,14 +88,7 @@
             "changes": [
                 "完整版的更新功能来了, 多项已知问题修复, 优化软件流畅度, 等你更新哦~!",
                 "调整 浏览固件页面有分类显示、做UI调整"
-            ],
-            "updater": {
-                "platforms": {
-                    "windows-x86_64": {
-                        "url": "https://api.what-the-fuck.sbs/get-link?config=eyJGaWxlSWQiOjEzMjk2MjM3LCJGaWxlTmFtZSI6Ik5lYXJMaW5rIEZpcm13YXJlIENlbnRlcl8xLjMuMF94NjQtc2V0dXAuZXhlIiwiVHlwZSI6MCwiU2l6ZSI6MjIzMDc3MjQ3LCJDb250ZW50VHlwZSI6IjAiLCJTM0tleUZsYWciOiIxODI5MzQ5MjgzLTAiLCJDcmVhdGVBdCI6IjIwMjQtMTEtMTJUMjA6NDE6NDQrMDg6MDAiLCJVcGRhdGVBdCI6IjIwMjQtMTEtMTJUMjA6NDE6NTIrMDg6MDAiLCJFdGFnIjoiNDc3YjQ3NDA5MzI1ZTY1M2E3YjQ1YjYyMzA1ZTNiZDciLCJEb3dubG9hZFVybCI6IiIsIlN0YXR1cyI6NSwiUGFyZW50RmlsZUlkIjowLCJDYXRlZ29yeSI6MTEsIlB1bmlzaEZsYWciOjAsIlN0b3JhZ2VOb2RlIjoibTEyIiwiUHJldmlld1R5cGUiOjB9"
-                    }
-                }
-            }
+            ]
         },
         {
             "version": "1.3.1",
@@ -121,19 +97,7 @@
                 "最新最快的管理器, 优化各项细节, 请尽快更新本版!",
                 "新增 串口烧写工具如用户并没有下载, 可以跳转至页面下载",
                 "调整 串口调试(Beta)内合包延迟5ms以下会有提示"
-            ],
-            "updater": {
-                "platforms": {
-                    "windows-x86_64": {
-                      "url": "https://api.what-the-fuck.sbs/get-link?config=eyJGaWxlSWQiOjEzMzE0NTE4LCJGaWxlTmFtZSI6Ik5lYXJMaW5rIEZpcm13YXJlIENlbnRlcl8xLjMuMV94NjQtc2V0dXAuZXhlIiwiVHlwZSI6MCwiU2l6ZSI6MjIzMDkxOTA3LCJDb250ZW50VHlwZSI6IjAiLCJTM0tleUZsYWciOiIxODI5MzQ5MjgzLTAiLCJDcmVhdGVBdCI6IjIwMjQtMTEtMTNUMjE6MjY6MjkrMDg6MDAiLCJVcGRhdGVBdCI6IjIwMjQtMTEtMTNUMjE6MjY6NDArMDg6MDAiLCJFdGFnIjoiYmYwZTZhNzIwMTdhZDFhM2Y1ZmM1ZjI1NTIyNDg4YjQiLCJEb3dubG9hZFVybCI6IiIsIlN0YXR1cyI6NSwiUGFyZW50RmlsZUlkIjowLCJDYXRlZ29yeSI6MTEsIlB1bmlzaEZsYWciOjAsIlN0b3JhZ2VOb2RlIjoibTEyIiwiUHJldmlld1R5cGUiOjB9"
-                    }
-                  }
-            }
-        },
-        {
-            "version": "",
-            "date": "",
-            "changes": []
+            ]
         }
     ]
 }
