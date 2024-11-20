@@ -15,6 +15,13 @@
       "recommended": true
     },
     {
+      "filename": "metadata-collections_haohanyh_cucc.json",
+      "urlPrefix": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850",
+      "urlSuffix": "",
+      "description": "浩瀚银河福州联通机房 镜像源, 联通FTTR千兆网络, 中国大陆福州源，浩瀚银河项目维护者维护",
+      "recommended": true
+    },
+    {
       "filename": "metadata-collections_netlify.json",
       "urlPrefix": "https://mirrors.nearlink-firmware.gbclstudio.cn",
       "urlSuffix": "",
