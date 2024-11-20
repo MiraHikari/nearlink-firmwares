@@ -20,15 +20,15 @@
       {
         "name": "Hi2821 AT固件",
         "filename": "BS21_SLE_AT_T1.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpiat/BS21_SLE_AT_T1.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiat/BS21_SLE_AT_T1.fwpkg"
       },
       {
         "name": "Hi2821 AT固件参考手册",
         "filename": "BearPi-Pico_H2821_AT_T1.pdf",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpiat/BearPi-Pico_H2821_AT_T1.pdf"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiat/BearPi-Pico_H2821_AT_T1.pdf"
       }
     ],
-    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpiat/readme.md"
+    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiat/readme.md"
   },
   "bearpigfsk": {
     "online": true,
@@ -51,15 +51,15 @@
       {
         "name": "Hi3863服务端固件",
         "filename": "GFSK_1M_20dB_server.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpigfsk/GFSK_1M_20dB_server.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpigfsk/GFSK_1M_20dB_server.fwpkg"
       },
       {
         "name": "Hi3863客户端固件",
         "filename": "GFSK_1M_20dB_client.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpigfsk/GFSK_1M_20dB_client.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpigfsk/GFSK_1M_20dB_client.fwpkg"
       }
     ],
-    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpigfsk/readme.md"
+    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpigfsk/readme.md"
   },
   "bearpitest": {
     "online": true,
@@ -83,7 +83,7 @@
       {
         "name": "Hi2821测试固件",
         "filename": "bs21_all_in_one.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpitest/bs21_all_in_one.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpitest/bs21_all_in_one.fwpkg"
       }
     ]
   },
@@ -108,10 +108,10 @@
       {
         "name": "Hi3863测试固件",
         "filename": "ws63-liteos-app_all.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpiuart/ws63-liteos-app_all.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiuart/ws63-liteos-app_all.fwpkg"
       }
     ],
-    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/bearpiuart/readme.md"
+    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiuart/readme.md"
   },
   "hihopeat": {
     "online": true,
@@ -134,10 +134,10 @@
       {
         "name": "Hi3863 AT固件",
         "filename": "ws63-liteos-app_all.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/hihopeat/ws63-liteos-app_all.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/hihopeat/ws63-liteos-app_all.fwpkg"
       }
     ],
-    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/hihopeat/readme.md"
+    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/hihopeat/readme.md"
   },
   "nlchat": {
     "online": true,
@@ -159,24 +159,24 @@
       {
         "name": "Hi2821服务端固件",
         "filename": "bs21_all_in_one_server.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/nlchat/bs21_all_in_one_server.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/nlchat/bs21_all_in_one_server.fwpkg"
       },
       {
         "name": "Hi2821客户端固件",
         "filename": "bs21_all_in_one_client.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/nlchat/bs21_all_in_one_client.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/nlchat/bs21_all_in_one_client.fwpkg"
       },
       {
         "name": "Hi3863服务端固件",
         "filename": "ws63-liteos-app_all_server.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/nlchat/ws63-liteos-app_all_server.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/nlchat/ws63-liteos-app_all_server.fwpkg"
       },
       {
         "name": "Hi3863客户端固件",
         "filename": "ws63-liteos-app_all_client.fwpkg",
-        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/nlchat/ws63-liteos-app_all_client.fwpkg"
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/nlchat/ws63-liteos-app_all_client.fwpkg"
       }
     ],
-    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh/firmwares/nlchat/readme.md"
+    "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/nlchat/readme.md"
   }
 }
