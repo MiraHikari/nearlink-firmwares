@@ -64,6 +64,11 @@
         "name": "BM-H63 多命令集合 专业版",
         "filename": "BearPi BM-H63 多命令集合 专业版.json",
         "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiebmh63at/BearPi BM-H63 多命令集合 专业版.json"
+      },
+      {
+        "name": "BM-H63 多命令集合 专业版 密码123456",
+        "filename": "BearPi BM-H63 多命令集合 专业版 密码123456.json",
+        "rawLink": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiebmh63at/BearPi BM-H63 多命令集合 专业版 密码123456.json"
       }
     ],
     "readmeFile": "https://fuzhou-cucc-haohanyh-fz1.haohanyh.ovh:11850/firmwares/bearpiebmh63at/readme.md"
