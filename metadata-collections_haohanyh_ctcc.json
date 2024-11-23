@@ -30,6 +30,37 @@
     ],
     "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiat/readme.md"
   },
+  "bearpiebmh63at": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派BM H63 AT固件",
+    "description": "小熊派最新一代星闪产品, 硬件产品支持更多应用领域!",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "国产替代"
+    ],
+    "chips": [
+      "Hi3863"
+    ],
+    "brands": [
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "BM-H63 AT固件",
+        "filename": "h3863_sle_at_standard_r1.fwpkg",
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiebmh63at/h3863_sle_at_standard_r1.fwpkg"
+      },
+      {
+        "name": "BM-H63 通用AT固件命令PDF",
+        "filename": "BearPi-BM H63 通用AT固件命令手册_r1.pdf",
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiebmh63at/BearPi-BM H63 通用AT固件命令手册_r1.pdf"
+      }
+    ],
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/bearpiebmh63at/readme.md"
+  },
   "bearpigfsk": {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
