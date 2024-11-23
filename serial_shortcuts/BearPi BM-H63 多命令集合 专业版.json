@@ -1,0 +1,638 @@
+{
+  "name": "BearPi BM-H63 多命令集合 专业版",
+  "description": "BM-H63 多命令集合，来自小熊派官网公开网盘的BearPi-BM H63 通用AT固件命令手册PDF文件。",
+  "categories": [
+    {
+      "id": "basic",
+      "name": "基础命令"
+    },
+    {
+      "id": "serial",
+      "name": "串口配置"
+    },
+    {
+      "id": "nearlink",
+      "name": "星闪设置"
+    },
+    {
+      "id": "system",
+      "name": "系统相关"
+    },
+    {
+      "id": "debug",
+      "name": "调试命令"
+    },
+    {
+      "id": "network",
+      "name": "网络测试"
+    }
+  ],
+  "commands": [
+    {
+      "name": "AT 测试命令",
+      "command": "AT",
+      "shortcut": "1",
+      "type": "normal",
+      "category": "basic",
+      "order": 0
+    },
+    {
+      "name": "ATE 设置命令的回显模式",
+      "command": "ATE{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "basic",
+      "parameters": [
+        {
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入value, 0为关闭回显模式, 1为开启回显模式",
+          "defaultValue": "1"
+        }
+      ],
+      "order": 1
+    },
+    {
+      "name": "AT+HELP 查询支持的 AT 指令",
+      "command": "AT+HELP",
+      "shortcut": "2",
+      "type": "normal",
+      "category": "system",
+      "order": 2
+    },
+    {
+      "name": "AT+RESET 重启设备",
+      "command": "AT+RESET",
+      "shortcut": "3",
+      "type": "normal",
+      "category": "system",
+      "order": 3
+    },
+    {
+      "name": "AT+RESTORESET 恢复出厂设置",
+      "command": "AT+RESTORESET",
+      "shortcut": "",
+      "type": "normal",
+      "category": "system",
+      "order": 4
+    },
+    {
+      "name": "AT+SETUARTCFG 设置串口配置",
+      "command": "AT+SETUARTCFG={baud_rate},{data_bits},{stop_bits},{parity},{flow_ctrl}",
+      "shortcut": "4",
+      "type": "parameterized",
+      "category": "serial",
+      "parameters": [
+        {
+          "id": "baud_rate",
+          "name": "波特率",
+          "placeholder": "请输入波特率, 支持 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600",
+          "defaultValue": "115200"
+        },
+        {
+          "id": "data_bits",
+          "name": "数据位",
+          "placeholder": "请输入波特率, 支持 5, 6, 7, 8",
+          "defaultValue": "8"
+        },
+        {
+          "id": "stop_bits",
+          "name": "停止位",
+          "placeholder": "请输入停止位，支持 1, 2",
+          "defaultValue": "1"
+        },
+        {
+          "id": "parity",
+          "name": "校验位",
+          "placeholder": "请输入校验位，支持0 无奇偶校验, 1 奇校验, 2 偶校验",
+          "defaultValue": "0"
+        },
+        {
+          "id": "flow_ctrl",
+          "name": "流控制",
+          "placeholder": "请输入流控制，支持0 无流控, 1 使能 CTS, 2 使能 RTS,3 同时使能 RTS 和 CTS,4 软件控制",
+          "defaultValue": "0"
+        }
+      ],
+      "order": 5
+    },
+    {
+      "name": "AT+SETUARTCFG? 查询串口配置",
+      "command": "AT+SETUARTCFG?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "serial",
+      "order": 6
+    },
+    {
+      "name": "AT+SETUARTCFG=? 测试串口配置",
+      "command": "AT+SETUARTCFG=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "serial",
+      "order": 7
+    },
+    {
+      "name": "AT+SETTXPOWER 设置发射功率",
+      "command": "AT+SETTXPOWER={txpower}",
+      "shortcut": "5",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "txpower",
+          "name": "发射功率",
+          "placeholder": "请输入发射功率 2,1,0,-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16",
+          "defaultValue": "-10"
+        }
+      ],
+      "order": 8
+    },
+    {
+      "name": "AT+SETTXPOWER? 查询发射命令",
+      "command": "AT+SETTXPOWER?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 9
+    },
+    {
+      "name": "AT+SETTXPOWER=? 测试发射功率",
+      "command": "AT+SETTXPOWER=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 10
+    },
+    {
+      "name": "AT+SETSLEADDR 设置 SLE 的 MAC 地址",
+      "command": "AT+SETSLEADDR={mac}",
+      "shortcut": "6",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "mac",
+          "name": "十六进制字符串，客户端 mac 地址",
+          "placeholder": "请输入客户端MAC地址",
+          "defaultValue": "ebef339b8d5d"
+        }
+      ],
+      "order": 11
+    },
+    {
+      "name": "AT+SETSLEADDR? 查询 SLE 的 MAC 地址",
+      "command": "AT+SETSLEADDR?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 12
+    },
+    {
+      "name": "AT+SETSLEADDR=? 测试返回 SLE 的 MAC 地址",
+      "command": "AT+SETSLEADDR=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 13
+    },
+    {
+      "name": "AT+SETMODE 设置运作模式",
+      "command": "AT+SETMODE={mode}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "mode",
+          "name": "运作模式",
+          "placeholder": "请输入模式，0为客户端模式，1为服务端模式",
+          "defaultValue": "1"
+        }
+      ],
+      "order": 14
+    },
+    {
+      "name": "AT+SKEY 设置服务端密钥",
+      "command": "AT+SKEY={type},{pwd}",
+      "shortcut": "7",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "type",
+          "name": "整形加密类型",
+          "placeholder": "请输入您是否需要加密？0为不加密，1为SM3加密",
+          "defaultValue": "1"
+        },
+        {
+          "id": "pwd",
+          "name": "密钥",
+          "placeholder": "请输入密钥，字符串内容",
+          "defaultValue": "123456789"
+        }
+      ],
+      "order": 15
+    },
+    {
+      "name": "AT+SKEY? 查询服务端密钥",
+      "command": "AT+SKEY?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 16
+    },
+    {
+      "name": "AT+SKEY=? 测试服务端密钥",
+      "command": "AT+SKEY=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 17
+    },
+    {
+      "name": "AT+SSERVER 服务端开启服务",
+      "command": "AT+SSERVER={mode}",
+      "shortcut": "8",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "mode",
+          "name": "广播设置",
+          "placeholder": "请确认您是否需要广播？0为关闭广播，1为开启广播",
+          "defaultValue": "1"
+        }
+      ],
+      "order": 18
+    },
+    {
+      "name": "AT+SSERVER? 服务端开启查询",
+      "command": "AT+SSERVER?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 19
+    },
+    {
+      "name": "AT+SSERVER=? 服务端测试开启",
+      "command": "AT+SSERVER=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 20
+    },
+    {
+      "name": "AT+SCLIST 服务端获取用户连接列表",
+      "command": "AT+SCLIST",
+      "shortcut": "9",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 21
+    },
+    {
+      "name": "AT+SSEND 服务端发送 HEX 数据",
+      "command": "AT+SSEND={name},{data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "字符串",
+          "placeholder": "请输入客户端名称",
+          "defaultValue": ""
+        },
+        {
+          "id": "data",
+          "name": "HEX数据",
+          "placeholder": "请输入要发送的数据，最大256字节",
+          "defaultValue": "313233343536373839"
+        }
+      ],
+      "order": 22
+    },
+    {
+      "name": "AT+SSEND=? 服务端测试 HEX 数据",
+      "command": "AT+SSEND=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "order": 23
+    },
+    {
+      "name": "AT+SSENDSTR 服务端发送字符串数据",
+      "command": "AT+SSENDSTR={name},{data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "字符串",
+          "placeholder": "请输入客户端名称",
+          "defaultValue": ""
+        },
+        {
+          "id": "data",
+          "name": "String数据",
+          "placeholder": "请输入要发送的数据，最大256字节",
+          "defaultValue": "123456789"
+        }
+      ],
+      "order": 24
+    },
+    {
+      "name": "AT+SSENDSTR=? 服务端测试字符串数据",
+      "command": "AT+SSENDSTR=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "order": 25
+    },
+    {
+      "name": "AT+SSENDALL 服务端向所有连接设备发送HEX数据",
+      "command": "AT+SSENDALL={data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "data",
+          "name": "HEX数据",
+          "placeholder": "请输入要发送的数据，最大256字节",
+          "defaultValue": "313233343536373839"
+        }
+      ],
+      "order": 26
+    },
+    {
+      "name": "AT+SSENDALLSTR 服务端向所有连接设备发送字符串数据",
+      "command": "AT+SSENDALLSTR={data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "data",
+          "name": "String数据",
+          "placeholder": "请输入要发送的数据，最大256字节",
+          "defaultValue": "123456789"
+        }
+      ],
+      "order": 27
+    },
+    {
+      "name": "AT+SBLACK 服务端黑名单管理",
+      "command": "AT+SBLACK={mode},{name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "mode",
+          "name": "黑名单管理",
+          "placeholder": "请设定您的行为，0为删除黑名单，1为添加黑名单",
+          "defaultValue": "1"
+        },
+        {
+          "id": "name",
+          "name": "客户端名称",
+          "placeholder": "请输入对方客户端名称",
+          "defaultValue": ""
+        }
+      ],
+      "order": 28
+    },
+    {
+      "name": "AT+SRADIOFR 服务端设置广播间隔时间",
+      "command": "AT+SRADIOFR={times}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "times",
+          "name": "广播间隔时间",
+          "placeholder": "请输入广播间隔时间，单位ms，取值范围10-1000",
+          "defaultValue": "100"
+        }
+      ],
+      "order": 29
+    },
+    {
+      "name": "AT+SRADIOFRE? 服务端查询广播间隔时间",
+      "command": "AT+SRADIOFRE?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "order": 30
+    },
+    {
+      "name": "AT+SKILLCLIENT 服务端断开客户端连接",
+      "command": "AT+SKILLCLIENT={name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "客户端名称",
+          "placeholder": "请输入对方客户端名称",
+          "defaultValue": ""
+        }
+      ],
+      "order": 31
+    },
+    {
+      "name": "+SRECVDATA 服务端接收数据",
+      "command": "+SRECVDATA: {name},{data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "debug",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "客户端名称",
+          "placeholder": "请输入客户端名称",
+          "defaultValue": "CLIENT"
+        },
+        {
+          "id": "data",
+          "name": "Data",
+          "placeholder": "请输入接收到的数据并主动上报, 十六进制",
+          "defaultValue": "313233343536"
+        }
+      ],
+      "order": 32
+    },
+    {
+      "name": "AT+CKEY 设置客户端密钥",
+      "command": "AT+CKEY={type},{pwd}",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "type",
+          "name": "整形加密类型",
+          "placeholder": "请输入您是否需要加密？0为不加密，1为SM3加密",
+          "defaultValue": "1"
+        },
+        {
+          "id": "pwd",
+          "name": "密钥",
+          "placeholder": "请输入密钥，字符串内容",
+          "defaultValue": "123456789"
+        }
+      ],
+      "order": 33
+    },
+    {
+      "name": "AT+CKEY? 查询客户端密钥",
+      "command": "AT+CKEY?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 34
+    },
+    {
+      "name": "AT+CKEY=? 测试客户端密钥",
+      "command": "AT+CKEY=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 35
+    },
+    {
+      "name": "AT+CSETNAM 设置客户端设备名称",
+      "command": "AT+CSETNAM={name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "字符串",
+          "placeholder": "请输入客户端设备名称，最大 31 字节",
+          "defaultValue": "CLIENT"
+        }
+      ],
+      "order": 36
+    },
+    {
+      "name": "AT+CSETNAME? 查询客户端设备名称",
+      "command": "AT+CSETNAME?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 37
+    },
+    {
+      "name": "AT+CCONNECT 客户端连接服务端",
+      "command": "AT+CCONNECT={name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "字符串",
+          "placeholder": "请输入客户端名称",
+          "defaultValue": "SERVER"
+        }
+      ],
+      "order": 38
+    },
+    {
+      "name": "AT+CCONNECT? 查询客户端连接服务端",
+      "command": "AT+CCONNECT?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 39
+    },
+    {
+      "name": "AT+CSLIST 客户端获取服务端列表",
+      "command": "AT+CSLIST",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "order": 40
+    },
+    {
+      "name": "AT+CSEND 客户端发送 HEX 数据",
+      "command": "AT+CSEND={data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "data",
+          "name": "HEX数据",
+          "placeholder": "请输入要发送的数据，最大256字节",
+          "defaultValue": "313233343536373839"
+        }
+      ],
+      "order": 41
+    },
+    {
+      "name": "AT+CSEND=? 客户端测试 HEX 数据",
+      "command": "AT+CSEND=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "order": 42
+    },
+    {
+      "name": "AT+CSENDSTR 客户端发送字符串数据",
+      "command": "AT+CSENDSTR={data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "id": "data",
+          "name": "String数据",
+          "placeholder": "请输入要发送的数据，最大256字节",
+          "defaultValue": "123456789"
+        }
+      ],
+      "order": 43
+    },
+    {
+      "name": "AT+CSENDSTR=? 客户端测试字符串数据",
+      "command": "AT+CSENDSTR=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "order": 44
+    },
+    {
+      "name": "AT+CDISCONNECT 客户端断开与服务端连接",
+      "command": "AT+CDISCONNECT",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "order": 45
+    },
+    {
+      "name": "+CRECVDATA 客户端接收数据",
+      "command": "+CRECVDATA: {data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "debug",
+      "parameters": [
+        {
+          "id": "data",
+          "name": "Data",
+          "placeholder": "请输入接收到的数据并主动上报, 十六进制",
+          "defaultValue": "3132333435"
+        }
+      ],
+      "order": 46
+    }
+  ],
+  "exportTime": "2024-11-23T10:55:49.636Z",
+  "author": "Hny0305Lin",
+  "version": "1.0.1-rc3"
+}
