@@ -53,20 +53,30 @@ async function processMetadata(config) {
             continue;
           }
 
+          // 处理固件文件
           if (metadata.files && Array.isArray(metadata.files)) {
             metadata.files = metadata.files.map(file => ({
               ...file,
               rawLink: `${urlPrefix}/firmwares/${folder}/${file.filename}${config.urlSuffix}`
             }));
             delete metadata.files.filename;
-
-            // 检查是否存在 readme.md
-            if (await fs.access(readmePath).then(() => true).catch(() => false)) {
-              metadata.readmeFile = `${urlPrefix}/firmwares/${folder}/readme.md${config.urlSuffix}`;
-            }
-
-            result[folder] = metadata;
           }
+
+          // 处理串口快捷指令文件
+          if (metadata.serialcuts && Array.isArray(metadata.serialcuts)) {
+            metadata.serialcuts = metadata.serialcuts.map(cut => ({
+              ...cut,
+              rawLink: `${urlPrefix}/firmwares/${folder}/${cut.filename}${config.urlSuffix}`
+            }));
+            delete metadata.serialcuts.filename;
+          }
+
+          // 检查是否存在 readme.md
+          if (await fs.access(readmePath).then(() => true).catch(() => false)) {
+            metadata.readmeFile = `${urlPrefix}/firmwares/${folder}/readme.md${config.urlSuffix}`;
+          }
+
+          result[folder] = metadata;
         } catch (error) {
           console.error(`Invalid JSON in ${metadataPath}:`, error);
         }
