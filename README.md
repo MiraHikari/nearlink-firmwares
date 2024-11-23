@@ -31,11 +31,17 @@
 > HiHope_NearLink_DK3863E_V03
 > 润和WS63开发板，可以适用Hi3863固件。
 
+> Hihope_HH-D03
+> 润和BS21开发板，可以适用Hi2821固件。
+
 > BearPi_Pico_H3863
 > 小熊派Hi3863开发板，可以适用Hi3863固件。
 
 > BearPi_Pico_H2821
 > 小熊派Hi2821开发板，可以适用Hi2821固件。
+
+> BearPi_EBM_H63
+> 小熊派Hi3863邮票孔开发板，可以适用EBM_H63小熊派加密固件。
 
 > Haohanyh_Hi2821_Dev_Board
 > 浩瀚银河Hi2821核心板，可以适用Hi2821固件。
