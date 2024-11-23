@@ -62,7 +62,8 @@
     "serialcuts": [
       {
         "name": "BM-H63 多命令集合 专业版",
-        "filename": "BearPi BM-H63 多命令集合 专业版.json"
+        "filename": "BearPi BM-H63 多命令集合 专业版.json",
+        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/bearpiebmh63at/BearPi BM-H63 多命令集合 专业版.json"
       }
     ],
     "readmeFile": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/bearpiebmh63at/readme.md"
