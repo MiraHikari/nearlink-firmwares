@@ -59,6 +59,12 @@
         "rawLink": "https://github.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main/firmwares/bearpiebmh63at/BearPi-BM H63 通用AT固件命令手册_r1.pdf"
       }
     ],
+    "serialcut": [
+      {
+        "name": "BM-H63 多命令集合 专业版",
+        "filename": "BearPi BM-H63 多命令集合 专业版.json"
+      }
+    ],
     "readmeFile": "https://github.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main/firmwares/bearpiebmh63at/readme.md"
   },
   "bearpigfsk": {
