@@ -2,7 +2,7 @@
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
     "packageName": "小熊派Hi2821 AT固件",
-    "description": "小熊派在官网上推出的AT固件, 支持AT指令, 可以用来进行串口控制等操作。",
+    "description": "小熊派在官网上推出的AT固件, 支持AT指令, 可以用来进行串口控制等操作。未来将会推出多命令集合json软件内使用。",
     "author": "BearPi",
     "authorAvatar": "",
     "needCode": false,
