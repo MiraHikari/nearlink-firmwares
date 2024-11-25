@@ -199,8 +199,20 @@
     "brands": [
       "润和"
     ],
-    "files": [],
-    "serialcuts": []
+    "files": [
+      {
+        "name": "HH-D03 通用AT固件命令PDF",
+        "filename": "HH-D03 通用AT固件命令手册_r1.pdf",
+        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/hihopehhd03at/HH-D03 通用AT固件命令手册_r1.pdf"
+      }
+    ],
+    "serialcuts": [
+      {
+        "name": "HH-D03 多命令集合 专业版",
+        "filename": "HH-D03 多命令集合 专业版.json",
+        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/hihopehhd03at/HH-D03 多命令集合 专业版.json"
+      }
+    ]
   },
   "nlchat": {
     "online": true,
