@@ -182,6 +182,26 @@
     ],
     "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/hihopeat/readme.md"
   },
+  "hihopehhd03at": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "润和HH-D03(BS21) AT固件",
+    "description": "润和家的最新一代星闪产品, 改名更新!",
+    "author": "Hihope",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "国产替代"
+    ],
+    "chips": [
+      "Hi2821"
+    ],
+    "brands": [
+      "润和"
+    ],
+    "files": [],
+    "serialcuts": []
+  },
   "nlchat": {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
