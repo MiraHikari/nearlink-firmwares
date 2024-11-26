@@ -78,7 +78,7 @@
 3. 添加固件文件(`.fwpkg`)、说明文档和元数据
 4. 提交 Pull Request
 
-详细规范请参考[固件提交指南](docs/firmware-contribution.md)
+详细规范请参考[固件提交指南](docs/firmware-contribution.md#固件提交指南)
 
 ### 2. 分享串口命令
 
