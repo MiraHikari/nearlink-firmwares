@@ -1,7 +1,7 @@
-# StarFlash Firmware Management
+# NearLink Firmware Management
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/docs/1.png" alt="StarFlash Firmware Management" width="200"/>
+    <img src="https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/docs/1.png" alt="NearLink Firmware Management"/>
 </p>
 
 <p align="center">
@@ -23,9 +23,9 @@
 
 ## 📖 Introduction
 
-StarFlash Firmware Management is a one-stop firmware management tool based on **Tauri + Rust**, integrating features such as serial port functionality, firmware flashing, firmware store distribution, and download management.
+NearLink Firmware Management is a one-stop firmware management tool based on **Tauri + Rust**, integrating features such as serial port functionality, firmware flashing, firmware store distribution, and download management.
 
-This project aims to build a bridge between StarFlash users and developers, allowing users to conveniently use open-source firmware while enabling developers to promptly release updates. As the new generation of domestic near-field wireless communication solutions in China, StarFlash has been applied in multiple fields since the release of the 1.0 standard in 2022. We hope that through this platform, more people can conveniently participate in building the StarFlash ecosystem.
+This project aims to build a bridge between NearLink users and developers, allowing users to conveniently use open-source firmware while enabling developers to promptly release updates. As the new generation of domestic near-field wireless communication solutions in China, NearLink has been applied in multiple fields since the release of the 1.0 standard in 2022. We hope that through this platform, more people can conveniently participate in building the NearLink ecosystem.
 
 ## 🎯 Key Features
 

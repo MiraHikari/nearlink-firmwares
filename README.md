@@ -1,7 +1,7 @@
 # 星闪固件管理
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/docs/1.png" alt="星闪固件管理" width="200"/>
+    <img src="https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/docs/1.png" alt="星闪固件管理"/>
 </p>
 
 <p align="center">
