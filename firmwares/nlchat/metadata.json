@@ -34,6 +34,14 @@
         {
             "name": "Hi3863客户端固件",
             "filename": "ws63-liteos-app_all_client.fwpkg"
+        },
+        {
+            "name": "WS63润和服务端固件",
+            "filename": "hihopews63-liteos-app_all_server.fwpkg"
+        },
+        {
+            "name": "WS63润和客户端固件",
+            "filename": "hihopews63-liteos-app_all_client.fwpkg"
         }
     ]
 }
