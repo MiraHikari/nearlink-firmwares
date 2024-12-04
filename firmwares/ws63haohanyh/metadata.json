@@ -25,10 +25,12 @@
     ],
     "serialcuts": [
         {
-
+            "name": "浩瀚银河 Hi3863 星闪网关 命令集.json",
+            "filename": "1.json"
         },
         {
-
+            "name": "浩瀚银河 Hi3863 星闪网关 测试.json",
+            "filename": "2.json"
         }
     ]
 }
