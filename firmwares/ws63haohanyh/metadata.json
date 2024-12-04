@@ -1,0 +1,34 @@
+{
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/12/04/qOBvsbZ1YjSumUa.png",
+    "packageName": "浩瀚银河Hi3863星闪网关产品固件页",
+    "description": "浩瀚银河开发板, 使用华为海思Hi3863芯片!",
+    "author": "Lin.Meng.",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+        "物联网"
+    ],
+    "chips": [
+        "Hi3863"
+    ],
+    "brands": [
+        "浩瀚银河"
+    ],
+    "files": [
+        {
+
+        },
+        {
+
+        }
+    ],
+    "serialcuts": [
+        {
+
+        },
+        {
+
+        }
+    ]
+}
