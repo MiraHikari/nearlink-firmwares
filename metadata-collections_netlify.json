@@ -295,10 +295,14 @@
     ],
     "serialcuts": [
       {
-        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/ws63haohanyh/undefined"
+        "name": "浩瀚银河 Hi3863 星闪网关 命令集.json",
+        "filename": "1.json",
+        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/ws63haohanyh/1.json"
       },
       {
-        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/ws63haohanyh/undefined"
+        "name": "浩瀚银河 Hi3863 星闪网关 测试.json",
+        "filename": "2.json",
+        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/ws63haohanyh/2.json"
       }
     ],
     "readmeFile": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/ws63haohanyh/readme.md"
