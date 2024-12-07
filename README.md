@@ -1,7 +1,7 @@
-# 星闪固件管理
+# 星闪工具箱
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/docs/1.png" alt="星闪固件管理"/>
+    <img src="https://raw.githubusercontent.com/MiraHikari/nearlink-firmwares/main/docs/1.png" alt="星闪工具箱"/>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## 📖 简介
 
-星闪固件管理是一款基于**Tauri + Rust**开发的一站式固件管理工具,整合了串口功能、串口烧写、固件商店分发下载管理等功能。
+星闪工具箱是一款基于**Tauri + Rust**开发的一站式固件管理工具,整合了串口功能、串口烧写、固件商店分发下载管理等功能。
 
 本项目旨在搭建星闪用户和开发者之间的桥梁,让用户能够便捷地使用开源固件,同时也让开发者能够及时发布更新。作为中国原生的新一代近场距离无线连接通信解决方案,星闪自2022年发布1.0标准以来,已经在多个领域得到应用。我们希望通过这个平台,让更多人能够便捷地参与到星闪生态的建设中来。
 
