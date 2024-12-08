@@ -4,277 +4,47 @@
 
 ### Demo案例
 
-<table width="990" border="0" cellpadding="0" cellspacing="0" style='border-collapse:collapse;table-layout:fixed;'>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" x:str>
-            <strong>一级分类</strong></td>
-        <td width="170" x:str>
-            <strong>子分类</strong></td>
-        <td width="680" colspan="6" align="center" x:str>
-            <strong>应用示例</strong></td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" align="center" rowspan="6" style='height:27.00pt' x:str>
-            <strong>基础驱动</strong></td>
-        <td x:str>
-            <strong>I2C</strong></td>
-        <td width="170" x:str>
-            <a href="">I2C</a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td x:str>
-            <strong>SPI</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td></td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td x:str>
-            <strong>UART</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td x:str>
-            <strong>ADC</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td></td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td x:str>
-            <strong>PWM</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td></td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td x:str>
-            <strong>GPIO</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" align="center" rowspan="1" style='height:27.00pt' x:str>
-            <strong>星闪</strong></td>
-        <td x:str>
-            <strong>SLE</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" align="center" rowspan="1" style='height:27.00pt' x:str>
-            <strong>蓝牙</strong></td>
-        <td x:str>
-            <strong>BLE</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" align="center" rowspan="1" style='height:27.00pt' x:str>
-            <strong>以太网</strong></td>
-        <td x:str>
-            <strong>ETH</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" align="center" rowspan="1" style='height:27.00pt' x:str>
-            <strong>Wi-Fi</strong></td>
-        <td x:str>
-            <strong>Wi-Fi</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    <tr height="18" style='height:13.50pt;'>
-        <td width="140" align="center" rowspan="1" style='height:27.00pt' x:str>
-            <strong>浩瀚银河</strong></td>
-        <td x:str>
-            <strong>Demo</strong></td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-        <td width="170" x:str>
-            <a href=""></a>
-        </td>
-    </tr>
-    </tr>
-    <tr>
-        <![if supportMisalignedColumns]>
-            <tr height="18" style="display:none;"></tr>
-        <![endif]>
-</table>
+2025 Q1 ~ 2025 Q2 公布
+
+### 产品特色
+
+> 浩瀚银河第一款将Hi3863星闪芯片解决方案落地成实体产品呈现
+> 主要芯片和连接器使用国产芯片
+> 基础外设丰富, 是一款将星闪芯片的所有基本能力通过接口实现轻松使用
+
+### 功能接口
+
+| V1板子 功能接口 | 丝印编码 | 功能介绍 | 备注 |
+| :------------: | :------------: | :------------: | :------------: |
+| 2.4G板载天线 | ANT1 | 支持Wi-Fi, SLE, BLE天线 |  |
+| Hi3863芯片 | U15 | RISC-V 高性能 32bit CPU，最大主频支持 240MHz，合封4MB Flash |  |
+| Type-C接口 | U3 | 支持USB输入，具备烧录功能和供电等 |  |
+| 蜂鸣器 | Q4 | 板载蜂鸣器，可提供提示等操作 |  |
+| LED灯 | LED1 | 可通过代码控制RGB颜色 |  |
+| 485口 | P1 | 可连接外设使用 |  |
+| I2C口 | U7, U8, U10 | 可连接外设使用 |  |
+| CH390H芯片 | U13 | 一款自带10/100M以太网介质传输层（MAC）和物理层收发器（PHY）的工业级以太网控制器芯片 |  |
+| ETH以太网接口 | RJ1 | 可连接网络使用，让星闪设备支持连入互联网 |  |
+| CH442E芯片 | U2 | 额定5V 电源电压的模拟开关芯片 |  |
+| 电流测量端子 | H1 | 两脚 | VRS VGND |
+| 公共地 | H2 | 两脚 | GND GND |
+| 可调电阻输出 | H3 | 两脚 | RVOUT VM_IN |
+| 可调电阻接地 | H4 | 两脚 | RVGND GND |
+| 可调电阻输入 | H5 | 两脚 | RVIN REFV |
+| 5V电源 | H6 | 两脚 | VBUS |
+| 滑动开关 | SW1 | 控制板子的供电，区分Type-C供电和5V直入供电 |  |
+|  |  |  |  |
+
+### 立创EDA链接
+
+2025 Q1 公布V1版本
+
+2025 Q2 公布V1修改版本(如果有需要修订的硬件外围)
+
+### 图片展示
+
+![pic1](https://s2.loli.net/2024/12/04/qOBvsbZ1YjSumUa.png)
+
+![pic2](https://s2.loli.net/2024/12/09/cLIQEJ7jbyH13vC.png)
+
+![shiti1](#)
