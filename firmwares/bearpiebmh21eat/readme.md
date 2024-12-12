@@ -8,7 +8,7 @@
 
 # AT固件介绍：
 
-可前往小熊派固件官网:[敬请期待公测期间修改](https://www.bearpi.cn/)
+可前往小熊派固件官网:[点我前往](https://bearpi.cn/core_board/bearpi/firmware/?firmware=1&active=0)
 
 该固件特性介绍：
 
