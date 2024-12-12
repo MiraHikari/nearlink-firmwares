@@ -30,6 +30,38 @@
     ],
     "readmeFile": "https://cucc.tj.fz.fj.nearlink-firmwares-mirrors.haohanyh.ovh:44443/firmwares/bearpiat/readme.md"
   },
+  "bearpiebmh21eat": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
+    "packageName": "小熊派BM H21E AT固件",
+    "description": "小熊派最新一代星闪产品, 硬件产品支持更多应用领域!",
+    "author": "BearPi",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "国产替代"
+    ],
+    "chips": [
+      "Hi2821"
+    ],
+    "brands": [
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "BM-H21E AT固件",
+        "filename": "bs21e_sle_at_standard_r1.fwpkg",
+        "rawLink": "https://cucc.tj.fz.fj.nearlink-firmwares-mirrors.haohanyh.ovh:44443/firmwares/bearpiebmh21eat/bs21e_sle_at_standard_r1.fwpkg"
+      },
+      {
+        "name": "BM-H21E 通用AT固件命令PDF",
+        "filename": "BearPi-BM H21E 通用AT固件命令手册_r1.pdf",
+        "rawLink": "https://cucc.tj.fz.fj.nearlink-firmwares-mirrors.haohanyh.ovh:44443/firmwares/bearpiebmh21eat/BearPi-BM H21E 通用AT固件命令手册_r1.pdf"
+      }
+    ],
+    "serialcuts": [],
+    "readmeFile": "https://cucc.tj.fz.fj.nearlink-firmwares-mirrors.haohanyh.ovh:44443/firmwares/bearpiebmh21eat/readme.md"
+  },
   "bearpiebmh63at": {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
