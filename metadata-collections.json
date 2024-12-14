@@ -335,5 +335,42 @@
       }
     ],
     "readmeFile": "https://github.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main/firmwares/ws63haohanyh/readme.md"
+  },
+  "xialatest": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/12/04/qOBvsbZ1YjSumUa.png",
+    "packageName": "下拉状态测试页",
+    "description": "下拉状态测试页, 下拉状态测试页",
+    "author": "Lin.Meng.",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
+    "needCode": false,
+    "categories": [
+      "通信功能",
+      "移动终端",
+      "国产替代",
+      "物联网",
+      "智能家居",
+      "娱乐功能",
+      "测距尝鲜",
+      "实体产品"
+    ],
+    "chips": [
+      "Hi2821",
+      "Hi3863",
+      "Hi3873"
+    ],
+    "brands": [
+      "浩瀚银河"
+    ],
+    "files": [
+      {
+        "rawLink": "https://github.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main/firmwares/xialatest/undefined"
+      }
+    ],
+    "serialcuts": [
+      {
+        "rawLink": "https://github.com/MiraHikari/nearlink-firmwares/raw/refs/heads/main/firmwares/xialatest/undefined"
+      }
+    ]
   }
 }
