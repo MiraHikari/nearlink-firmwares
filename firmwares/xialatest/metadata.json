@@ -1,8 +1,8 @@
 {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
-    "packageName": "下拉状态测试页",
-    "description": "下拉状态测试页, 下拉状态测试页",
+    "packageName": "下拉状态测试页233",
+    "description": "下拉状态测试页233, 下拉状态测试页",
     "author": "Lin.Meng.",
     "authorAvatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
     "needCode": false,
@@ -17,10 +17,10 @@
         "实体产品"
     ],
     "chips": [
-        "Hi2821","Hi3863","Hi3873"
+        "Hi2821","Hi3863"
     ],
     "brands": [
-        "浩瀚银河"
+        "浩瀚银河","小熊派","润和","华为海思","利尔达"
     ],
     "files": [
         {
