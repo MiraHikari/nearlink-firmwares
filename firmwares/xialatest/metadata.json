@@ -2,25 +2,18 @@
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/11/10/y9GvWc3wh8NpgrO.jpg",
     "packageName": "下拉状态测试页233",
-    "description": "下拉状态测试页233, 下拉状态测试页",
+    "description": "下拉状态下拉刷新, 1.6.1新特性",
     "author": "Lin.Meng",
     "authorAvatar": "https://avatars.githubusercontent.com/u/51528915?v=4",
     "needCode": false,
     "categories": [
-        "通信功能",
-        "移动终端",
-        "国产替代",
-        "物联网",
-        "智能家居",
-        "娱乐功能",
-        "测距尝鲜",
-        "实体产品"
+        "浩瀚银河Alpha"
     ],
     "chips": [
         "Hi2821","Hi3863","Hi2825","Hi3873","Hi2871"
     ],
     "brands": [
-        "浩瀚银河","SgguoTeam","小熊派","润和","华为海思","利尔达"
+        "浩瀚银河","SgguoTeam"
     ],
     "files": [
         {
