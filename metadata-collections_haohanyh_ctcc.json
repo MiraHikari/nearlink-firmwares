@@ -300,6 +300,38 @@
     ],
     "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/nlchat/readme.md"
   },
+  "slekeyboard": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/12/04/qOBvsbZ1YjSumUa.png",
+    "packageName": "星闪键盘SLEKeyBoard",
+    "description": "恭喜sanchuan在海思星闪体验官活动中取得卓越星闪体验官!",
+    "author": "Sanchuan",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/114403919?v=4",
+    "needCode": false,
+    "categories": [
+      "实体产品"
+    ],
+    "chips": [
+      "Hi2821"
+    ],
+    "brands": [
+      "星闪Dongle",
+      "小熊派"
+    ],
+    "files": [
+      {
+        "name": "星闪键盘 Dongle",
+        "filename": "bs21_all_in_one_dongle1.fwpkg",
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/slekeyboard/bs21_all_in_one_dongle1.fwpkg"
+      },
+      {
+        "name": "星闪键盘 键盘固件",
+        "filename": "bs21_all_in_one_keyboard1.fwpkg",
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/slekeyboard/bs21_all_in_one_keyboard1.fwpkg"
+      }
+    ],
+    "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/slekeyboard/readme.md"
+  },
   "ws63haohanyh": {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/12/04/qOBvsbZ1YjSumUa.png",
