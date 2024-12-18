@@ -1,0 +1,3360 @@
+{
+  "name": "Hihope HH-D03 多命令集合 专业版",
+  "description": "HH-D03 多命令集合，来自润和Gitee公开仓库的HH-D03 AT手册 PDF文件",
+  "categories": [
+    {
+      "id": "basic",
+      "name": "基础命令"
+    },
+    {
+      "id": "nearlink",
+      "name": "星闪设置"
+    },
+    {
+      "id": "system",
+      "name": "系统相关"
+    },
+    {
+      "id": "network",
+      "name": "网络测试"
+    }
+  ],
+  "commands": [
+    {
+      "name": "AT 测试 AT 功能",
+      "command": "AT",
+      "shortcut": "1",
+      "type": "normal",
+      "category": "basic",
+      "parameters": [],
+      "order": 0
+    },
+    {
+      "name": "AT+TESTSUITE 调试切换",
+      "command": "AT+TESTSUITE",
+      "shortcut": "",
+      "type": "normal",
+      "category": "basic",
+      "parameters": [],
+      "order": 1
+    },
+    {
+      "name": "AT+HELP 查看当前可用 AT 命令",
+      "command": "AT+HELP",
+      "shortcut": "2",
+      "type": "normal",
+      "category": "system",
+      "parameters": [],
+      "order": 2
+    },
+    {
+      "name": "AT+BLEENABLE 使能 BLE 协议栈",
+      "command": "AT+BLEENABLE",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 3
+    },
+    {
+      "name": "AT+BLEDISABLE 关闭 BLE 协议栈",
+      "command": "AT+BLEDISABLE",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 4
+    },
+    {
+      "name": "AT+BLESETADDR 设置本地设备地址",
+      "command": "AT+BLESETADDR={addr_type},{mac}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "Addr type",
+          "options": [
+            {
+              "label": "0（公共设备地址）",
+              "value": "0"
+            },
+            {
+              "label": "1（随机设备地址）",
+              "value": "1"
+            },
+            {
+              "label": "2（公共本端地址）",
+              "value": "2"
+            },
+            {
+              "label": "3（随机静态本端地址）",
+              "value": "3"
+            }
+          ],
+          "placeholder": "请输入蓝牙设备类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x1234567890AB",
+          "id": "mac",
+          "name": "Mac",
+          "placeholder": "请输入mac",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x跟随的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 5
+    },
+    {
+      "name": "AT+BLEGETADDR 获取本地设备地址",
+      "command": "AT+BLEGETADDR",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 6
+    },
+    {
+      "name": "AT+BLESETNAME 设置本地设备名称",
+      "command": "AT+BLESETNAME={len},{name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "10",
+          "id": "len",
+          "name": "Len",
+          "placeholder": "请输入本地设备名称长度",
+          "type": "input",
+          "validation": {
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "atcmdtest",
+          "id": "name",
+          "name": "Name",
+          "placeholder": "请输入本地设备名称",
+          "type": "input",
+          "validation": {
+            "pattern": "^(?=.{0,255}$).{0,255}$"
+          }
+        }
+      ],
+      "order": 7
+    },
+    {
+      "name": "AT+BLEGETNAME 获取本地设备名称",
+      "command": "AT+BLEGETNAME",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 8
+    },
+    {
+      "name": "AT+BLESETAPPEARANCE 设置本地设备外观",
+      "command": "AT+BLESETAPPEARANCE={value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "961",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入设置本地设备外观参数，参数值应为规定值，示例中 961 为键盘的外观值，具体请参考表 3-1",
+          "type": "input"
+        }
+      ],
+      "order": 9
+    },
+    {
+      "name": "AT+BLESETADVDATA 设置BLE广播数据",
+      "command": "AT+BLESETADVDATA={adv_length},{adv_data},{scan_rsp_length},{scan_rsp_data},{adv_id}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "6",
+          "id": "adv_length",
+          "name": "Adv length",
+          "placeholder": "请输入广播数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1234567890AB",
+          "id": "adv_data",
+          "name": "Adv data",
+          "placeholder": "请输入广播数据",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "scan_rsp_length",
+          "name": "Scan rsp length",
+          "placeholder": "请输入扫描返回数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "scan_rsp_data",
+          "name": "Scan rsp data",
+          "placeholder": "请输入扫描返回数据",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "adv_id",
+          "name": "Adv id",
+          "placeholder": "请输入广播 id，广播 ID 取值范围为[1,255]",
+          "type": "input",
+          "validation": {
+            "message": "请重新填写，广播 ID 取值范围为[1,255]",
+            "pattern": "^(1\\d{1,2}|2[0-4]\\d|25[0-5]|[2-9]\\d|[1-9])$"
+          }
+        }
+      ],
+      "order": 10
+    },
+    {
+      "name": "AT+BLESETADVPAR 设置 BLE 广播参数",
+      "command": "AT+BLESETADVPAR={min_interval},{max_interval},{adv_type},{own_addr},{peer_addr_type},{peer_addr},{channel_map},{adv_filter_policy},{tx_power},{duration},{adv_id}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "48",
+          "id": "min_interval",
+          "name": "Min interval",
+          "placeholder": "请输入最小扫描间隔, 取值范围[0x20, 0x4000], Time=N×0.625ms",
+          "type": "input"
+        },
+        {
+          "defaultValue": "48",
+          "id": "max_interval",
+          "name": "Max interval",
+          "placeholder": "请输入最大扫描间隔, 取值范围[0x20, 0x4000], Time=N×0.625ms",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "adv_type",
+          "name": "Adv type",
+          "placeholder": "请输入广播类型",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1234567890AB",
+          "id": "own_addr",
+          "name": "Own addr",
+          "placeholder": "请输入本端地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x前缀的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        },
+        {
+          "defaultValue": "0",
+          "id": "peer_addr_type",
+          "name": "Peer addr type",
+          "placeholder": "请输入对端地址类型",
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "0x1234567890AC",
+          "id": "peer_addr",
+          "name": "Peer addr",
+          "placeholder": "请输入对端地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x前缀的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        },
+        {
+          "defaultValue": "7",
+          "id": "channel_map",
+          "name": "Channel map",
+          "placeholder": "请输入信道",
+          "type": "input",
+          "validation": {
+            "message": "请重新修改，取值范围为[0x01, 0x07]"
+          }
+        },
+        {
+          "defaultValue": "0",
+          "id": "adv_filter_policy",
+          "name": "Adv filter policy",
+          "placeholder": "请输入过滤策略",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "tx_power",
+          "name": "Tx power",
+          "placeholder": "请输入扫描功率",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "duration",
+          "name": "Duration",
+          "placeholder": "请输入扫描周期",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "adv_id",
+          "name": "Adv id",
+          "placeholder": "请输入广播 ID，取值范围[1, 255] ",
+          "type": "input",
+          "validation": {
+            "message": "请重新填写，广播 ID 取值范围为[1,255]",
+            "pattern": "^(1\\d{1,2}|2[0-4]\\d|25[0-5]|[2-9]\\d|[1-9])$"
+          }
+        }
+      ],
+      "order": 11
+    },
+    {
+      "name": "AT+BLESTARTADV 开始发送 BLE 广播",
+      "command": "AT+BLESTARTADV={adv_id}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "adv_id",
+          "name": "Adv id",
+          "placeholder": "请输入广播 ID，取值范围[1, 255] ",
+          "type": "input",
+          "validation": {
+            "message": "请重新填写，广播 ID 取值范围为[1,255]",
+            "pattern": "^(1\\d{1,2}|2[0-4]\\d|25[0-5]|[2-9]\\d|[1-9])$"
+          }
+        }
+      ],
+      "order": 12
+    },
+    {
+      "name": "AT+BLESTOPADV 停止发送 BLE 广播",
+      "command": "AT+BLESTOPADV={adv_id}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "adv_id",
+          "name": "Adv id",
+          "placeholder": "请输入广播 ID，取值范围[1, 255] ",
+          "type": "input",
+          "validation": {
+            "message": "请重新填写，广播 ID 取值范围为[1,255]",
+            "pattern": "^(1\\d{1,2}|2[0-4]\\d|25[0-5]|[2-9]\\d|[1-9])$"
+          }
+        }
+      ],
+      "order": 13
+    },
+    {
+      "name": "AT+BLESETSCANPAR 设置 BLE 扫描参数",
+      "command": "AT+BLESETSCANPAR=0x{scan_interval},0x{scan_window},{scan_type},{scan_phy},{scan_rsp_policy}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "48",
+          "id": "scan_interval",
+          "name": "Scan interval",
+          "placeholder": "请输入扫描间隔, 取值范围[0x20, 0x4000], Time=N×0.625ms",
+          "type": "input",
+          "validation": {
+            "pattern": "^(0x[2-9a-f][0-9a-f]|[1-9a-f][0-9a-f]{2}|3[0-9a-f]{2}|400[0-9a-f])$"
+          }
+        },
+        {
+          "defaultValue": "48",
+          "id": "scan_window",
+          "name": "Scan window",
+          "placeholder": "请输入扫描窗口, 取值范围[0x04, 0x4000], Time=N× 0.625ms",
+          "type": "input",
+          "validation": {
+            "pattern": "^(20|[3-9]\\d|[1-3]\\d{2}|4000)$"
+          }
+        },
+        {
+          "defaultValue": "0",
+          "id": "scan_type",
+          "name": "Scan type",
+          "options": [
+            {
+              "label": "0（被动扫描）",
+              "value": "0"
+            },
+            {
+              "label": "1（主动扫描）",
+              "value": "1"
+            }
+          ],
+          "placeholder": "请输入扫描类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "1",
+          "id": "scan_phy",
+          "name": "Scan phy",
+          "placeholder": "请输入扫描 phy",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "scan_rsp_policy",
+          "name": "Scan rsp policy",
+          "placeholder": "请输入扫描过滤策略",
+          "type": "input"
+        }
+      ],
+      "order": 14
+    },
+    {
+      "name": "AT+BLESTARTSCAN 启动 BLE 扫描",
+      "command": "AT+BLESTARTSCAN",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 15
+    },
+    {
+      "name": "AT+BLESTOPSCAN 停止 BLE 扫描",
+      "command": "AT+BLESTOPSCAN",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 16
+    },
+    {
+      "name": "AT+BLEPAIR 与对端设备发起配对",
+      "command": "AT+BLEPAIR={addr_type},{addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "Addr type",
+          "options": [
+            {
+              "label": "0（公共设备地址）",
+              "value": "0"
+            },
+            {
+              "label": "1（随机设备地址）",
+              "value": "1"
+            },
+            {
+              "label": "2（公共本端地址）",
+              "value": "2"
+            },
+            {
+              "label": "3（随机静态本端地址）",
+              "value": "3"
+            }
+          ],
+          "placeholder": "请输入蓝牙设备类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x1234567890AC",
+          "id": "addr",
+          "name": "Addr",
+          "placeholder": "请输入addr",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 17
+    },
+    {
+      "name": "AT+BLEGETPAIREDNUM 获取 BLE 设备配对设备数量",
+      "command": "AT+BLEGETPAIREDNUM",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 18
+    },
+    {
+      "name": "AT+BLEGETPAIREDDEV 获取 BLE 设备配对设备",
+      "command": "AT+BLEGETPAIREDDEV",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 19
+    },
+    {
+      "name": "AT+BLEGETPAIREDSTA 获取 BLE 设备配对状态",
+      "command": "AT+BLEGETPAIREDSTA={addr_type},{addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "Addr type",
+          "options": [
+            {
+              "label": "0（公共设备地址）",
+              "value": "0"
+            },
+            {
+              "label": "1（随机设备地址）",
+              "value": "1"
+            },
+            {
+              "label": "2（公共本端地址）",
+              "value": "2"
+            },
+            {
+              "label": "3（随机静态本端地址）",
+              "value": "3"
+            }
+          ],
+          "placeholder": "请输入蓝牙设备类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x1234567890AC",
+          "id": "addr",
+          "name": "Addr",
+          "placeholder": "请输入addr",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 20
+    },
+    {
+      "name": "AT+BLEUNPAIR 取消配对",
+      "command": "AT+BLEUNPAIR={addr_type},{addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "Addr type",
+          "options": [
+            {
+              "label": "0（公共设备地址）",
+              "value": "0"
+            },
+            {
+              "label": "1（随机设备地址）",
+              "value": "1"
+            },
+            {
+              "label": "2（公共本端地址）",
+              "value": "2"
+            },
+            {
+              "label": "3（随机静态本端地址）",
+              "value": "3"
+            }
+          ],
+          "placeholder": "请输入蓝牙设备类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x1234567890AC",
+          "id": "addr",
+          "name": "Addr",
+          "placeholder": "请输入addr",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 21
+    },
+    {
+      "name": "AT+BLEUNPAIRALL 取消所有配对",
+      "command": "AT+BLEUNPAIRALL",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 22
+    },
+    {
+      "name": "AT+BLECONNPARUPD 连接参数更新",
+      "command": "AT+BLECONNPARUPD={conn_handle},{interval_min},{interval_max},{slave_latency},{timeout_multiplier}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "conn_handle",
+          "name": "Conn handle",
+          "placeholder": "请输入连接句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x48",
+          "id": "interval_min",
+          "name": "Interval min",
+          "placeholder": "请输入链路调度最小间隔，[0x06, 0x0C80]，Time=N×1.25ms",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x48",
+          "id": "interval_max",
+          "name": "Interval max",
+          "placeholder": "请输入链路调度最大间隔，[0x06, 0x0C80]，Time=N×1.25ms",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "slave_latency",
+          "name": "Slave latency",
+          "placeholder": "请输入延迟周期，单位 slot（该值表示在设置值的周期内 可以不回复, 为 0 时则表示每包都需回复）",
+          "type": "input"
+        },
+        {
+          "defaultValue": "500",
+          "id": "timeout_multiplier",
+          "name": "Timeout multiplier",
+          "placeholder": "请输入超时断连间隔",
+          "type": "input"
+        }
+      ],
+      "order": 23
+    },
+    {
+      "name": "AT+BLECONN 与 BLE 设备连接",
+      "command": "AT+BLECONN={addr_type},{addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "Addr type",
+          "options": [
+            {
+              "label": "0（公共设备地址）",
+              "value": "0"
+            },
+            {
+              "label": "1（随机设备地址）",
+              "value": "1"
+            },
+            {
+              "label": "2（公共本端地址）",
+              "value": "2"
+            },
+            {
+              "label": "3（随机静态本端地址）",
+              "value": "3"
+            }
+          ],
+          "placeholder": "请输入蓝牙设备类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x1234567890AC",
+          "id": "addr",
+          "name": "Addr",
+          "placeholder": "请输入addr",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 24
+    },
+    {
+      "name": "AT+BLEDISCONN 断开 BLE 设备连接",
+      "command": "AT+BLEDISCONN={addr_type},{addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "Addr type",
+          "options": [
+            {
+              "label": "0（公共设备地址）",
+              "value": "0"
+            },
+            {
+              "label": "1（随机设备地址）",
+              "value": "1"
+            },
+            {
+              "label": "2（公共本端地址）",
+              "value": "2"
+            },
+            {
+              "label": "3（随机静态本端地址）",
+              "value": "3"
+            }
+          ],
+          "placeholder": "请输入蓝牙设备类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x1234567890AC",
+          "id": "addr",
+          "name": "Addr",
+          "placeholder": "请输入addr",
+          "type": "input",
+          "validation": {
+            "message": "请输入带0x的12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 25
+    },
+    {
+      "name": "AT+BLEGAPREGCBK 注册 (BLE)gap 回调函数",
+      "command": "AT+BLEGAPREGCBK",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 26
+    },
+    {
+      "name": "AT+GATTSREGSRV 创建一个 GATT server",
+      "command": "AT+GATTSREGSRV={uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "0x1122",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入应用uuid",
+          "type": "input"
+        }
+      ],
+      "order": 27
+    },
+    {
+      "name": "AT+GATTSUNREG 删除 GATT server，释放资源",
+      "command": "AT+GATTSUNREG={uuid} ",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "0x1122",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入应用uuid",
+          "type": "input"
+        }
+      ],
+      "order": 28
+    },
+    {
+      "name": "AT+GATTSADDSERV 添加一个 GATT 服务",
+      "command": "AT+GATTSADDSERV={server_id},{svc_uuid},{is_primary_flag}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端 id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1812",
+          "id": "svc_uuid",
+          "name": "Svc uuid",
+          "placeholder": "请输入服务 uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "is_primary_flag",
+          "name": "Is primary flag",
+          "placeholder": "是否是首要服务",
+          "type": "input"
+        }
+      ],
+      "order": 29
+    },
+    {
+      "name": "AT+GATTSSYNCADDSERV 添加一个 GATT 服务（同步）",
+      "command": "AT+GATTSSYNCADDSERV={server_id},{svc_uuid},{is_primary_flag}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端 id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1812",
+          "id": "svc_uuid",
+          "name": "Svc uuid",
+          "placeholder": "请输入服务 uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "is_primary_flag",
+          "name": "Is primary flag",
+          "placeholder": "是否是首要服务",
+          "type": "input"
+        }
+      ],
+      "order": 30
+    },
+    {
+      "name": "AT+GATTSADDCHAR 为 GATT 服务添加一个特征",
+      "command": "AT+GATTSADDCHAR={server_id},{service_handle},{chara_uuid},{permissions},{properties},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2a4a",
+          "id": "chara_uuid",
+          "name": "Chara uuid",
+          "placeholder": "请输入特征uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x01",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请键入权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x02",
+          "id": "properties",
+          "name": "Properties",
+          "placeholder": "请键入特性",
+          "type": "input"
+        },
+        {
+          "defaultValue": "4",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长",
+          "type": "input"
+        },
+        {
+          "defaultValue": "01010003",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
+          "type": "input"
+        }
+      ],
+      "order": 31
+    },
+    {
+      "name": "AT+GATTSSYNCADDCHAR 为 GATT 服务添加一个特征（同步）",
+      "command": "AT+GATTSSYNCADDCHAR={server_id},{service_handle},{chara_uuid},{permissions},{properties},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2a4a",
+          "id": "chara_uuid",
+          "name": "Chara uuid",
+          "placeholder": "请输入特征 uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x01",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请键入权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x02",
+          "id": "properties",
+          "name": "Properties",
+          "placeholder": "请键入特性",
+          "type": "input"
+        },
+        {
+          "defaultValue": "4",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "01010003",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
+          "type": "input"
+        }
+      ],
+      "order": 32
+    },
+    {
+      "name": "AT+GATTSADDDESCR 为最新的特征添加一个描述符",
+      "command": "AT+GATTSADDDESCR={server_id},{service_handle},{chara_uuid},{permissions},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2902",
+          "id": "chara_uuid",
+          "name": "Chara uuid",
+          "placeholder": "请输入特征 uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x03",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请键入权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0100",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
+          "type": "input"
+        }
+      ],
+      "order": 33
+    },
+    {
+      "name": "AT+GATTSSYNCADDDESCR 为最新的特征添加一个描述符（同步）",
+      "command": "AT+GATTSSYNCADDDESCR={server_id},{service_handle},{chara_uuid},{permissions},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2902",
+          "id": "chara_uuid",
+          "name": "Chara uuid",
+          "placeholder": "请输入特征 uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x03",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请键入权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0100",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
+          "type": "input"
+        }
+      ],
+      "order": 34
+    },
+    {
+      "name": "AT+GATTSSTARTSERV 启动指定的 GATT 服务",
+      "command": "AT+GATTSSTARTSERV={server_id},{server_handle}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "server_handle",
+          "name": "Server handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        }
+      ],
+      "order": 35
+    },
+    {
+      "name": "AT+GATTSDELALLSERV 删除指定 server 上的所有服务",
+      "command": "AT+GATTSDELALLSERV={server_id}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        }
+      ],
+      "order": 36
+    },
+    {
+      "name": "AT+GATTSSENDRSP 发送响应",
+      "command": "AT+GATTSSENDRSP={server_id},{conn_handle},{request_id},{status},{offset},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_handle",
+          "name": "Conn handle",
+          "placeholder": "请输入连接句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "req_id",
+          "id": "request_id",
+          "name": "Request id",
+          "placeholder": "请输入请求id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "status",
+          "name": "Status",
+          "placeholder": "请输入请求结果",
+          "switchValues": {
+            "false": "0",
+            "true": "1"
+          },
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "0",
+          "id": "offset",
+          "name": "Offset",
+          "placeholder": "请输入偏移",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x4562",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
+          "type": "input"
+        }
+      ],
+      "order": 37
+    },
+    {
+      "name": "AT+GATTSSNDNTFY 发送通知或指示",
+      "command": "AT+GATTSSNDNTFY={server_id},{conn_handle},{attr_handle},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端 id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_handle",
+          "name": "Conn handle",
+          "placeholder": "请输入连接句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "9",
+          "id": "attr_handle",
+          "name": "Attr handle",
+          "placeholder": "请输入偏移",
+          "type": "input"
+        },
+        {
+          "defaultValue": "7",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x00000000000014",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值",
+          "type": "input"
+        }
+      ],
+      "order": 38
+    },
+    {
+      "name": "AT+GATTSSNDNTFYBYUUID 根据 uuid 发送通知或指示",
+      "command": "AT+GATTSSNDNTFYBYUUID={server_id},{conn_handle},{chara_uuid},{start_handle},{end_handle},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_handle",
+          "name": "Conn handle",
+          "placeholder": "请输入连接句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2a4d",
+          "id": "chara_uuid",
+          "name": "Chara uuid",
+          "placeholder": "请输入特征 uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "start_handle",
+          "name": "Start handle",
+          "placeholder": "请输入起始句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "9",
+          "id": "end_handle",
+          "name": "End handle",
+          "placeholder": "请输入结束句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "7",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入值长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x00000000000014",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入值",
+          "type": "input"
+        }
+      ],
+      "order": 39
+    },
+    {
+      "name": "AT+GATTSREGCBK 注册 GATT 服务端回调函数",
+      "command": "AT+GATTSREGCBK",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "parameters": [],
+      "order": 40
+    },
+    {
+      "name": "AT+GATTSSETMTU 在连接之前设置 server rx mtu",
+      "command": "AT+GATTSSETMTU={server_id},{mtu_size}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "23",
+          "id": "mtu_size",
+          "name": "Mtu size",
+          "placeholder": "请输入mtu 大小",
+          "type": "input"
+        }
+      ],
+      "order": 41
+    },
+    {
+      "name": "AT+GATTCREG 创建一个 GATT client",
+      "command": "AT+GATTCREG={uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "0x1122",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入应用uuid",
+          "type": "input"
+        }
+      ],
+      "order": 42
+    },
+    {
+      "name": "AT+GATTCUNREG 删除 GATT client, 释放资源",
+      "command": "AT+GATTCUNREG={uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "0x1122",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入应用uuid",
+          "type": "input"
+        }
+      ],
+      "order": 43
+    },
+    {
+      "name": "AT+GATTCFNDSERV 发现所有服务(可 by uuid)",
+      "command": "AT+GATTCFNDSERV={client_id},{conn_id},{uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端 id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1212",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入应用uuid",
+          "type": "input"
+        }
+      ],
+      "order": 44
+    },
+    {
+      "name": "AT+GATTCFNDCHAR 发现所有特征",
+      "command": "AT+GATTCFNDCHAR={client_id},{conn_id},{server_handle},{uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "server_handle",
+          "name": "Server handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1212",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入应用uuid",
+          "type": "input"
+        }
+      ],
+      "order": 45
+    },
+    {
+      "name": "AT+GATTCFNDDESCR 发现所有描述符",
+      "command": "AT+GATTCFNDDESCR={client_id},{conn_id},{handle}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        }
+      ],
+      "order": 46
+    },
+    {
+      "name": "AT+GATTCREADBYHDL 读取 by hdl",
+      "command": "AT+GATTCREADBYHDL={client_id},{conn_id},{handle}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入服务句柄",
+          "type": "input"
+        }
+      ],
+      "order": 47
+    },
+    {
+      "name": "AT+GATTCREADBYUUID 读取 by_uuid",
+      "command": "AT+GATTCREADBYUUID={client_id},{conn_id},{start_hdl},{end_hdl},{uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "13",
+          "id": "start_hdl",
+          "name": "Start hdl",
+          "placeholder": "请输入起始句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "13",
+          "id": "end_hdl",
+          "name": "End hdl",
+          "placeholder": "请输入结束句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2a4d",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入想要读的 uuid",
+          "type": "input"
+        }
+      ],
+      "order": 48
+    },
+    {
+      "name": "AT+GATTCWRITEREQ 写 by hdl req",
+      "command": "AT+GATTCWRITEREQ={client_id},{conn_id},{handle},{data_len},{data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "13",
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "data_len",
+          "name": "Data len",
+          "placeholder": "请输入数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x11",
+          "id": "data",
+          "name": "Data",
+          "placeholder": "请输入数据",
+          "type": "input"
+        }
+      ],
+      "order": 49
+    },
+    {
+      "name": "AT+GATTCWRITECMD 写 by hdl cmd",
+      "command": "AT+GATTCWRITECMD={client_id},{conn_id},{handle},{data_len},{data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "13",
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入句柄",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "data_len",
+          "name": "Data len",
+          "placeholder": "请输入数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x11",
+          "id": "data",
+          "name": "Data",
+          "placeholder": "请输入数据",
+          "type": "input"
+        }
+      ],
+      "order": 50
+    },
+    {
+      "name": "AT+GATTCEXCHMTU 交换 mtu 请求",
+      "command": "AT+GATTCEXCHMTU={server_id},{conn_id},{mtu_size}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "network",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "server_id",
+          "name": "Server id",
+          "placeholder": "请输入服务端id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "100",
+          "id": "mtu_size",
+          "name": "client rx mtu 大小",
+          "placeholder": "仅允许输入数字",
+          "type": "input",
+          "validation": {
+            "message": "请输入数字",
+            "pattern": "^[0-9]+$"
+          }
+        }
+      ],
+      "order": 51
+    },
+    {
+      "name": "AT+GATTCREGCBK 注册 GATT 客户端回调函数",
+      "command": "AT+GATTCREGCBK",
+      "shortcut": "",
+      "type": "normal",
+      "category": "network",
+      "parameters": [],
+      "order": 52
+    },
+    {
+      "name": "AT+SLEENABLE SLE 使能",
+      "command": "AT+SLEENABLE",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 53
+    },
+    {
+      "name": "AT+SLESETADVPAR 设置 SLE 广播参数",
+      "command": "AT+SLESETADVPAR={announce_handle},{announce_mode},{announce_interval_min},{announce_interval_max},{own_addr_type},{own_addr_addr},{peer_addr_type},{peer_addr_addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "announce_handle",
+          "name": "Announce handle",
+          "placeholder": "请输入设备公开句柄，取值范围[0, 0x10]",
+          "type": "input"
+        },
+        {
+          "defaultValue": "3",
+          "id": "announce_mode",
+          "name": "Announce Mode",
+          "placeholder": "请输入设备公开类型",
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "200",
+          "id": "announce_interval_min",
+          "name": "Announce interval min",
+          "placeholder": "请输入最小设备公开周期，0x000020~0xffffff，单位 125μs",
+          "type": "input"
+        },
+        {
+          "defaultValue": "200",
+          "id": "announce_interval_max",
+          "name": "Announce interval max",
+          "placeholder": "请输入最大设备公开周期，0x000020~0xffffff，单位 125μs",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "own_addr_type",
+          "name": "Own Addr Type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请选择 SLE 本端地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "000000000000",
+          "id": "own_addr_addr",
+          "name": "Own Addr Addr",
+          "placeholder": "请输入 SLE 本端设备地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^[0-9A-Fa-f]{12}$"
+          }
+        },
+        {
+          "defaultValue": "0",
+          "id": "peer_addr_type",
+          "name": "Peer Addr Type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请输入 SLE 对端设备地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "000000000000",
+          "id": "peer_addr_addr",
+          "name": "Peer Addr Addr",
+          "placeholder": "请输入 SLE 对端设备地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 54
+    },
+    {
+      "name": "AT+SLESETADVDATA 设置指令 ( 此命令需在 SLE 使能 AT+SLEENABLE 后下发 )",
+      "command": "AT+SLESETADVDATA={adv_handle},{announce_data_len},{seek_rsp_data_len},{announce_data},{seek_rsp_data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "adv_handle",
+          "name": "Adv handle",
+          "placeholder": "请输入广播 handle, 取值范围[0, 0x10]",
+          "type": "input"
+        },
+        {
+          "defaultValue": "10",
+          "id": "announce_data_len",
+          "name": "Announce data len",
+          "placeholder": "请输入设备公开数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "4",
+          "id": "seek_rsp_data_len",
+          "name": "Seek rsp data len",
+          "placeholder": "请输入扫描响应数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "aabbccddeeff11223344",
+          "id": "announce_data",
+          "name": "Announce data",
+          "placeholder": "请输入设备公开数据（hex 类型字符串，最大长度 521 个字符） ",
+          "type": "input"
+        },
+        {
+          "defaultValue": "11224455",
+          "id": "seek_rsp_data",
+          "name": "Seek rsp data",
+          "placeholder": "请输入扫描响应数据（hex 类型字符串，最大长度 521 个字符） ",
+          "type": "input"
+        }
+      ],
+      "order": 55
+    },
+    {
+      "name": "AT+SLESTARTADV 起 SLE 广播 ( 此命令需在 SLE 使能 AT+SLEENABLE 后下发 )",
+      "command": "AT+SLESTARTADV={adv_enable}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "adv_enable",
+          "name": "Adv_enable",
+          "placeholder": "请输入adv handle, 取值范围[0, 0x10] ",
+          "switchValues": {
+            "false": "0",
+            "true": "1"
+          },
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        }
+      ],
+      "order": 56
+    },
+    {
+      "name": "AT+SLESTOPADV 停 SLE 广播 ( 此命令需在 SLE 起广播 AT+SLESTARTADV=1 后下发 )",
+      "command": "AT+SLESTOPADV={adv_handle}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "adv_handle",
+          "name": "Adv handle",
+          "placeholder": "请输入adv_handle",
+          "type": "input"
+        }
+      ],
+      "order": 57
+    },
+    {
+      "name": "AT+SLESETSCANPAR 设置扫描参数",
+      "command": "AT+SLESETSCANPAR={scan_type},{scan_interval},{scan_window}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "scan_type",
+          "name": "Scan type",
+          "options": [
+            {
+              "label": "0（被动扫描）",
+              "value": "0"
+            },
+            {
+              "label": "1（主动扫描）",
+              "value": "1"
+            }
+          ],
+          "placeholder": "请输入扫描类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x48",
+          "id": "scan_interval",
+          "name": "Scan interval",
+          "placeholder": "请输入扫描间隔，取值范围[0x14, 0xFFFF]，单位 125 μs",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x48",
+          "id": "scan_window",
+          "name": "Scan window",
+          "placeholder": "请输入扫描窗口，取值范围[0x14, 0xFFFF]，单位 125 μs",
+          "type": "input"
+        }
+      ],
+      "order": 58
+    },
+    {
+      "name": "AT+SLESTARTSCAN 启动扫描",
+      "command": "AT+SLESTARTSCAN",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 59
+    },
+    {
+      "name": "AT+SLESTOPSCAN 关闭扫描",
+      "command": "AT+SLESTOPSCAN",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 60
+    },
+    {
+      "name": "AT+SLESETNAME 设置本端名称",
+      "command": "AT+SLESETNAME={len},{name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "7",
+          "id": "len",
+          "name": "Len",
+          "placeholder": "请输入name 长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "SDKTEST",
+          "id": "name",
+          "name": "Name",
+          "placeholder": "请输入名字",
+          "type": "input"
+        }
+      ],
+      "order": 61
+    },
+    {
+      "name": "AT+SLEGETNAME 获取本端名称",
+      "command": "AT+SLEGETNAME",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 62
+    },
+    {
+      "name": "AT+SLESETADDR 设置本端地址",
+      "command": "AT+SLESETADDR={addr_type},{addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "addr_type",
+          "name": "addr type",
+          "placeholder": "请输入地址类型",
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "0x000000000001",
+          "id": "addr",
+          "name": "addr",
+          "placeholder": "请输入地址，12位十六进制地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 63
+    },
+    {
+      "name": "AT+SLEGETADDR 获取本端地址",
+      "command": "AT+SLEGETADDR",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 64
+    },
+    {
+      "name": "AT+SLECONN 建立 SLE 连接",
+      "command": "AT+SLECONN={sle_addr_type},{sle_addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "sle_addr_type",
+          "name": "sle addr type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请选择 SLE 设备地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "0x000000000000",
+          "id": "sle_addr",
+          "name": "十六进制地址",
+          "placeholder": "请设置 SLE 设备地址，12位十六进制地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 65
+    },
+    {
+      "name": "AT+SLEDISCONN 断开 SLE 连接",
+      "command": "AT+SLEDISCONN={sle_addr_type},{sle_addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "sle_addr_type",
+          "name": "sle addr type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请选择 SLE 设备地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "000000000000",
+          "id": "sle_addr",
+          "name": "sle addr",
+          "placeholder": "12位十六进制地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 66
+    },
+    {
+      "name": "AT+SLESETPHY 设置 SLE PHY",
+      "command": "AT+SLESETPHY={conn_id},{tx_phy},{rx_phy}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "tx_phy",
+          "name": "Tx phy",
+          "options": [
+            {
+              "label": "1M PHY",
+              "value": "0"
+            },
+            {
+              "label": "2M PHY",
+              "value": "1"
+            },
+            {
+              "label": "4M PHY",
+              "value": "2"
+            }
+          ],
+          "placeholder": "请选择 tx_phy",
+          "type": "select"
+        },
+        {
+          "defaultValue": "1",
+          "id": "rx_phy",
+          "name": "Rx phy",
+          "options": [
+            {
+              "label": "1M PHY",
+              "value": "0"
+            },
+            {
+              "label": "2M PHY",
+              "value": "1"
+            },
+            {
+              "label": "4M PHY",
+              "value": "2"
+            }
+          ],
+          "placeholder": "请输入rx_phy",
+          "type": "select"
+        }
+      ],
+      "order": 67
+    },
+    {
+      "name": "AT+SLESETDEFAULTCONNP 设置 SLE 默认连接参数",
+      "command": "AT+SLESETDEFAULTCONNP={enable_filter_policy},{initiate_phys},{gt_negotiate},{scan_interval},{scan_window},{max_interval},{min_interval},{timeout}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "enable_filter_policy",
+          "name": "enable filter policy",
+          "placeholder": "请键入是否打开链路过滤",
+          "switchValues": {
+            "false": "0",
+            "true": "1"
+          },
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "1",
+          "id": "initiate_phys",
+          "name": "Initiate phys",
+          "placeholder": "请输入链路扫描带宽",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1",
+          "id": "gt_negotiate",
+          "name": "Gt negotiate",
+          "placeholder": "请输入链路建立时是否进行 G 和 T 交互",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x20",
+          "id": "scan_interval",
+          "name": "Scan interval",
+          "placeholder": "请输入扫描对端设备的 interval",
+          "type": "input",
+          "validation": {
+            "message": "请重新输入",
+            "pattern": "^0x([1-9a-fA-F][0-9a-fA-F]*|[2-9a-fA-F][0-9a-fA-F]*)$"
+          }
+        },
+        {
+          "defaultValue": "0x20",
+          "id": "scan_window",
+          "name": "Scan window",
+          "placeholder": "请输入扫描对端设备的 windows",
+          "type": "input",
+          "validation": {
+            "message": "请重新输入",
+            "pattern": "^0x([1-9a-fA-F][0-9a-fA-F]*|[2-9a-fA-F][0-9a-fA-F]*)$"
+          }
+        },
+        {
+          "defaultValue": "0x64",
+          "id": "max_interval",
+          "name": "Max interval",
+          "placeholder": "请输入链路最大调度 interval",
+          "type": "input",
+          "validation": {
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "0x64",
+          "id": "min_interval",
+          "name": "Min interval",
+          "placeholder": "请输入链路最小调度 interval",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1FC",
+          "id": "timeout",
+          "name": "Timeout",
+          "placeholder": "请输入链路超时时间(N×10ms)",
+          "type": "input"
+        }
+      ],
+      "order": 68
+    },
+    {
+      "name": "AT+SLEPAIR 进行加密配对（需在 sle 建立连接以后，和对端启动加密配对）",
+      "command": "AT+SLEPAIR={sle_addr_type},{sle_addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "sle_addr_type",
+          "name": "sle addr type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请选择 SLE 设备地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "000000000000",
+          "id": "sle_addr",
+          "name": "sle addr",
+          "placeholder": "请输入 SLE 设备地址，12位十六进制地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 69
+    },
+    {
+      "name": "AT+SLEUNPAIR 移除加密配对",
+      "command": "AT+SLEUNPAIR={sle_addr_type},{sle_addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "sle_addr_type",
+          "name": "sle addr type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请选择 SLE 设备地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "000000000000",
+          "id": "sle_addr",
+          "name": "十六进制地址",
+          "placeholder": "请输入 SLE 设备地址，12位十六进制地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 70
+    },
+    {
+      "name": "AT+SLEGETPAIREDNUM 获取配对设备数目",
+      "command": "AT+SLEGETPAIREDNUM",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 71
+    },
+    {
+      "name": "AT+SLEGETPAIRDEV 获取配对设备",
+      "command": "AT+SLEGETPAIRDEV",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 72
+    },
+    {
+      "name": "AT+SLEGETPAIRSTA 获取配对状态",
+      "command": "AT+SLEGETPAIRSTA={sle_addr_type},{sle_addr}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "sle_addr_type",
+          "name": "sle addr type",
+          "options": [
+            {
+              "label": "0（公有地址）",
+              "value": "0"
+            },
+            {
+              "label": "6（随机地址）",
+              "value": "6"
+            }
+          ],
+          "placeholder": "请选择 SLE 设备地址类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "000000000000",
+          "id": "sle_addr",
+          "name": "十六进制地址",
+          "placeholder": "请输入 SLE 设备地址，12位十六进制地址",
+          "type": "input",
+          "validation": {
+            "message": "请输入12位十六进制地址",
+            "pattern": "^[0-9A-Fa-f]{12}$"
+          }
+        }
+      ],
+      "order": 73
+    },
+    {
+      "name": "AT+SLEGETBONDDEV 获取绑定设备状态",
+      "command": "AT+SLEGETBONDDEV",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 74
+    },
+    {
+      "name": "AT+SLECONNPARUPD 星闪逻辑链路更新参数",
+      "command": "AT+SLECONNPARUPD",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 75
+    },
+    {
+      "name": "AT+SLEREADPEERRSSI 读取对端 rssi",
+      "command": "AT+SLEREADPEERRSSI",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 76
+    },
+    {
+      "name": "AT+SSAPSADDSRV 注册服务端",
+      "command": "AT+SSAPSADDSRV={uuid}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0x1234",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入uuid",
+          "type": "input"
+        }
+      ],
+      "order": 77
+    },
+    {
+      "name": "AT+SSAPSDELALLSRV 删除服务端(去注册服务端)",
+      "command": "AT+SSAPSDELALLSRV",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 78
+    },
+    {
+      "name": "AT+SSAPSADDSERV 添加服务（通常情况下注册为主要服务）",
+      "command": "AT+SSAPSADDSERV={uuid},{is_primary}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0x2222",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "is_primary",
+          "name": "Is primary",
+          "placeholder": "请输入is_primary",
+          "type": "input"
+        }
+      ],
+      "order": 79
+    },
+    {
+      "name": "AT+SSAPSSYNCADDSERV 添加服务同步",
+      "command": "AT+SSAPSSYNCADDSERV={uuid},{is_primary}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0x2222",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入uuid",
+          "type": "input"
+        },
+        {
+          "defaultValue": "1",
+          "id": "is_primary",
+          "name": "Is primary",
+          "placeholder": "请输入is_primary",
+          "type": "input"
+        }
+      ],
+      "order": 80
+    },
+    {
+      "name": "AT+SSAPSADDPROPERTY 添加属性",
+      "command": "AT+SSAPSADDPROPERTY={service_handle},{uuid},{permissions},{operate_indication},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务的handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2323",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入SSAP特征 UUID",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请输入特征权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "operate_indication",
+          "name": "Operate indication",
+          "placeholder": "请输入操作指示数字",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入响应的数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1234",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入响应的数据",
+          "type": "input"
+        }
+      ],
+      "order": 81
+    },
+    {
+      "name": "AT+SSAPSSYNCADDPROPERTY 添加属性同步",
+      "command": "AT+SSAPSSYNCADDPROPERTY={service_handle},{uuid},{permissions},{operate_indication},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务的Handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x2323",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入SSAP 特征 UUID",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请输入特征权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "operate_indication",
+          "name": "Operate indication",
+          "placeholder": "请输入操作指示",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入响应的数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x1234",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入响应的数据",
+          "type": "input"
+        }
+      ],
+      "order": 82
+    },
+    {
+      "name": "AT+SSAPSADDDESCR 添加属性描述符",
+      "command": "AT+SSAPSADDDESCR={service_handle},{property_handle},{uuid},{permissions},{operate_indication},{type},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务 handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "property_handle",
+          "name": "Property handle",
+          "placeholder": "请输入属性 handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x3333",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入SSAP 描述符 UUID",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请输入特征权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "operate_indication",
+          "name": "Operate indication",
+          "placeholder": "请输入操作指示",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "type",
+          "name": "type",
+          "placeholder": "请输入描述符类型",
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x0200",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入数据",
+          "type": "input"
+        }
+      ],
+      "order": 83
+    },
+    {
+      "name": "AT+SSAPSSYNCADDDESCR 添加属性描述符同步",
+      "command": "AT+SSAPSSYNCADDDESCR={service_handle},{property_handle},{uuid},{permissions},{operate_indication},{type},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "1",
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务 handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "property_handle",
+          "name": "Property handle",
+          "placeholder": "请输入属性 handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x3333",
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入SSAP 描述符 UUID",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "permissions",
+          "name": "Permissions",
+          "placeholder": "请输入特征权限",
+          "type": "input"
+        },
+        {
+          "defaultValue": "5",
+          "id": "operate_indication",
+          "name": "Operate indication",
+          "placeholder": "请输入操作指示",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "type",
+          "name": "Type",
+          "placeholder": "请输入描述符类型",
+          "type": "input",
+          "validation": {
+            "message": "",
+            "pattern": ""
+          }
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x0200",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入数据",
+          "type": "input"
+        }
+      ],
+      "order": 84
+    },
+    {
+      "name": "AT+SSAPSSTARTSERV start service",
+      "command": "AT+SSAPSSTARTSERV={service_handle}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "service_handle",
+          "name": "Service handle",
+          "placeholder": "请输入服务Handle",
+          "type": "input",
+          "defaultValue": "1"
+        }
+      ],
+      "order": 85
+    },
+    {
+      "name": "AT+SSAPSSNDNTFY 服务端向客户端发送通知",
+      "command": "AT+SSAPSSNDNTFY={conn_id},{handle},{type},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入服务 handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "2",
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入属性 handle",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0",
+          "id": "type",
+          "name": "模式选择",
+          "options": [
+            {
+              "label": "0（特征值）",
+              "value": "0"
+            },
+            {
+              "label": "1（属性说明描述符）",
+              "value": "1"
+            },
+            {
+              "label": "2（客户端配置描述符）",
+              "value": "2"
+            },
+            {
+              "label": "3（服务端配置描述符）",
+              "value": "3"
+            },
+            {
+              "label": "4（格式描述符）",
+              "value": "4"
+            },
+            {
+              "label": "5（服务管理保留描述符，0x05~0x1F）",
+              "value": "5"
+            },
+            {
+              "label": "0xFF（厂商自定义描述符）",
+              "value": "0xFF"
+            }
+          ],
+          "placeholder": "请选择SSAP特征类型",
+          "type": "select"
+        },
+        {
+          "defaultValue": "2",
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入数据长度",
+          "type": "input"
+        },
+        {
+          "defaultValue": "0x0200",
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入数据",
+          "type": "input"
+        }
+      ],
+      "order": 86
+    },
+    {
+      "name": "AT+SSAPSNTFYBYUUID 服务端向客户端通过 uuid 发送通知",
+      "command": "AT+SSAPSNTFYBYUUID={conn_id},{uuid},{start_hdl},{end_hdl},{type},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "defaultValue": "0",
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入服务handle",
+          "type": "input"
+        },
+        {
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入属性 uuid",
+          "type": "input",
+          "defaultValue": "0x1234"
+        },
+        {
+          "id": "start_hdl",
+          "name": "Start hdl",
+          "placeholder": "请输入开始句柄",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "end_hdl",
+          "name": "End hdl",
+          "placeholder": "请输入结束句柄",
+          "type": "input",
+          "defaultValue": "0x1234"
+        },
+        {
+          "id": "type",
+          "name": "type",
+          "placeholder": "请选择 SSAP 特征类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0（特征值）",
+              "value": "0"
+            },
+            {
+              "label": "1（属性说明描述符）",
+              "value": "1"
+            },
+            {
+              "label": "2（客户端配置描述符）",
+              "value": "2"
+            },
+            {
+              "label": "3（服务端配置描述符）",
+              "value": "3"
+            },
+            {
+              "label": "4（格式描述符）",
+              "value": "4"
+            },
+            {
+              "label": "5（服务管理保留描述符，0x05~0x1F）",
+              "value": "5"
+            },
+            {
+              "label": "0xFF（厂商自定义描述符）",
+              "value": "0xFF"
+            }
+          ],
+          "defaultValue": "0"
+        },
+        {
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入数据长度",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入数据",
+          "type": "input",
+          "defaultValue": "0x0200"
+        }
+      ],
+      "order": 87
+    },
+    {
+      "name": "AT+SSAPSSNDRESP 服务端向客户端发送响应",
+      "command": "AT+SSAPSSNDRESP={conn_id},{request_id},{status},{value_len},{value}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入服务Handle",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "request_id",
+          "name": "Request id",
+          "placeholder": "请输入请求id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "status",
+          "name": "status",
+          "placeholder": "请输入发送响应原因",
+          "type": "input",
+          "switchValues": {
+            "false": "0",
+            "true": "1"
+          },
+          "validation": {
+            "pattern": "",
+            "message": ""
+          },
+          "defaultValue": "1"
+        },
+        {
+          "id": "value_len",
+          "name": "Value len",
+          "placeholder": "请输入数据长度",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "placeholder": "请输入数据",
+          "type": "input",
+          "defaultValue": "0x0200"
+        }
+      ],
+      "order": 88
+    },
+    {
+      "name": "AT+SSAPSREGCBK 服务端注册回调函数",
+      "command": "AT+SSAPSREGCBK",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 89
+    },
+    {
+      "name": "AT+SSAPCREGCBK 注册 SSAPC 回调函数",
+      "command": "AT+SSAPCREGCBK",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 90
+    },
+    {
+      "name": "AT+SSAPCFNDSTRU 发现 service",
+      "command": "AT+SSAPCFNDSTRU={client_id},{conn_id},{type},{uuid},{start_hdl},{end_hdl}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "type",
+          "name": "模式选择",
+          "placeholder": "请选择查找类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0（服务结构）",
+              "value": "0"
+            },
+            {
+              "label": "1（首要服务）",
+              "value": "1"
+            },
+            {
+              "label": "3（属性）",
+              "value": "3"
+            }
+          ],
+          "defaultValue": "1"
+        },
+        {
+          "id": "uuid",
+          "name": "Uuid",
+          "placeholder": "请输入uuid",
+          "type": "input",
+          "defaultValue": "0x1234"
+        },
+        {
+          "id": "start_hdl",
+          "name": "Start hdl",
+          "placeholder": "请输入开始句柄",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "end_hdl",
+          "name": "End hdl",
+          "placeholder": "请输入结束句柄",
+          "type": "input",
+          "defaultValue": "0xff"
+        }
+      ],
+      "order": 91
+    },
+    {
+      "name": "AT+SSAPCWRITECMD 客户端向服务端写入数据",
+      "command": "AT+SSAPCWRITECMD={client_id},{conn_id},{handle},{type},{len},{write_data}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入属性 handle",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "type",
+          "name": "模式选择",
+          "placeholder": "请选择客户端类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0",
+              "value": "0"
+            },
+            {
+              "label": "1",
+              "value": "1"
+            },
+            {
+              "label": "3",
+              "value": "3"
+            }
+          ],
+          "defaultValue": "0"
+        },
+        {
+          "id": "len",
+          "name": "Len",
+          "placeholder": "请输入写入数据长度",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "write_data",
+          "name": "Write data",
+          "placeholder": "请输入写入数据段",
+          "type": "input",
+          "defaultValue": "0x8899"
+        }
+      ],
+      "order": 92
+    },
+    {
+      "name": "AT+SSAPCWRITEREQ 客户端向服务端发送写请求",
+      "command": "AT+SSAPCWRITEREQ={client_id},{conn_id},{handle},{type},{len},{write_data}",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入属性 handle",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "type",
+          "name": "模式选择",
+          "placeholder": "请选择客户端类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0",
+              "value": "0"
+            },
+            {
+              "label": "1",
+              "value": "1"
+            },
+            {
+              "label": "3",
+              "value": "3"
+            }
+          ],
+          "defaultValue": "0"
+        },
+        {
+          "id": "len",
+          "name": "Len",
+          "placeholder": "请输入写入数据长度",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "write_data",
+          "name": "Write data",
+          "placeholder": "请输入写入数据段",
+          "type": "input",
+          "defaultValue": "0x8899"
+        }
+      ],
+      "order": 93
+    },
+    {
+      "name": "AT+SSAPCEXCHINFO 客户端发起信息交换",
+      "command": "AT+SSAPCEXCHINFO={client_id},{conn_id},{mtu_size},{version}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "mtu_size",
+          "name": "数字输入",
+          "placeholder": "请输入数字（最小值251最大值520）",
+          "type": "input",
+          "validation": {
+            "message": "请输入数字",
+            "pattern": "^[0-9]+$"
+          },
+          "defaultValue": "251"
+        },
+        {
+          "id": "version",
+          "name": "Version",
+          "placeholder": "请输入版本号",
+          "type": "input",
+          "defaultValue": "1"
+        }
+      ],
+      "order": 94
+    },
+    {
+      "name": "AT+SSAPCREADBYUUID 客户端通过 uuid 发送读请求",
+      "command": "AT+SSAPCREADBYUUID={client_id},{conn_id},{handle},{type},{len},{write_data}",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入属性 handle",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "type",
+          "name": "模式选择",
+          "placeholder": "请选择客户端类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0",
+              "value": "0"
+            },
+            {
+              "label": "1",
+              "value": "1"
+            },
+            {
+              "label": "3",
+              "value": "3"
+            }
+          ],
+          "defaultValue": "0"
+        },
+        {
+          "id": "len",
+          "name": "Len",
+          "placeholder": "请输入写入数据长度",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "write_data",
+          "name": "Write data",
+          "placeholder": "请输入写入数据段",
+          "type": "input",
+          "defaultValue": "0x8899"
+        }
+      ],
+      "order": 95
+    },
+    {
+      "name": "AT+SSAPCREADREQ 客户端读取服务端属性数据",
+      "command": "AT+SSAPCREADREQ={client_id},{conn_id},{handle},{type}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端 id（预留参数）",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "handle",
+          "name": "Handle",
+          "placeholder": "请输入属性 handle（连接成功后的回调里会打印）",
+          "type": "input",
+          "defaultValue": "2"
+        },
+        {
+          "id": "type",
+          "name": "模式选择",
+          "placeholder": "请选择客户端类型，取值：0/1/3",
+          "type": "select",
+          "options": [
+            {
+              "label": "0",
+              "value": "0"
+            },
+            {
+              "label": "1",
+              "value": "1"
+            },
+            {
+              "label": "3",
+              "value": "3"
+            }
+          ]
+        }
+      ],
+      "order": 96
+    },
+    {
+      "name": "AT+SLESETSCANPAR 设置扫描参数",
+      "command": "AT+SLESETSCANPAR={scan_type},{scan_interval},{scan_window}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "scan_type",
+          "name": "模式选择",
+          "placeholder": "请选择扫描类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0（被动扫描）",
+              "value": "0"
+            },
+            {
+              "label": "1（主动扫描）",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "id": "scan_interval",
+          "name": "Scan interval",
+          "placeholder": "请输入扫描间隔，取值范围[0x14, 0xFFFF]，单位 125 μs",
+          "type": "input",
+          "defaultValue": "0x48"
+        },
+        {
+          "id": "scan_window",
+          "name": "Scan window",
+          "placeholder": "请输入扫描窗口，取值范围[0x14, 0xFFFF]，单位 125 μs",
+          "type": "input",
+          "defaultValue": "0x48"
+        }
+      ],
+      "order": 97
+    },
+    {
+      "name": "AT+SLEDISCONNALL SLE 断开所有连接",
+      "command": "AT+SLEDISCONNALL",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 98
+    }
+  ],
+  "exportTime": "2024-12-18T15:14:52.763Z",
+  "author": "Hny0305Lin",
+  "version": "1.0.1.normal-rc1",
+  "readme": "# 润和 HH-D03 开发板\n\n主板是基于海思星闪BS21的解决方案，支持BLE5.3协议和BLE Mesh功能，支持SLE1.0协议，支持OpenHarmony轻量系统，可广泛适用于智能家电等物联网智能终端领域。\n\n详情请见官网和PDF开发板规格说明书文件。"
+}
