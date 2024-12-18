@@ -19,6 +19,10 @@
         {
             "name": "HH-D03 通用AT固件命令PDF",
             "filename": "HH-D03 通用AT固件命令手册_r1.pdf"
+        },
+        {
+            "name": "HH-D03 开发板规格说明书",
+            "filename": "HH-D03 开发板规格说明书-20241111.pdf"
         }
     ],
     "serialcuts": [
