@@ -233,6 +233,11 @@
     ],
     "files": [
       {
+        "name": "HH-D03 AT固件",
+        "filename": "bs21_all_in_one.fwpkg",
+        "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/hihopehhd03at/bs21_all_in_one.fwpkg"
+      },
+      {
         "name": "HH-D03 通用AT固件命令PDF",
         "filename": "HH-D03 通用AT固件命令手册_r1.pdf",
         "rawLink": "https://mirrors.nearlink-firmware.gbclstudio.cn/firmwares/hihopehhd03at/HH-D03 通用AT固件命令手册_r1.pdf"
