@@ -98,7 +98,7 @@
           "type": "select"
         },
         {
-          "defaultValue": "0x1234567890AB",
+          "defaultValue": "0x112233445566",
           "id": "mac",
           "name": "Mac",
           "placeholder": "请输入mac",
@@ -191,7 +191,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "0x1234567890AB",
+          "defaultValue": "0x112233445566",
           "id": "adv_data",
           "name": "Adv data",
           "placeholder": "请输入广播数据",
@@ -254,7 +254,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "0x1234567890AB",
+          "defaultValue": "0x112233445566",
           "id": "own_addr",
           "name": "Own addr",
           "placeholder": "请输入本端地址",
@@ -276,7 +276,7 @@
           }
         },
         {
-          "defaultValue": "0x1234567890AC",
+          "defaultValue": "0x112233445577",
           "id": "peer_addr",
           "name": "Peer addr",
           "placeholder": "请输入对端地址",
@@ -387,7 +387,7 @@
           "placeholder": "请输入扫描间隔, 取值范围[0x20, 0x4000], Time=N×0.625ms",
           "type": "input",
           "validation": {
-            "pattern": "^(0x[2-9a-f][0-9a-f]|[1-9a-f][0-9a-f]{2}|3[0-9a-f]{2}|400[0-9a-f])$"
+            "pattern": "^(20|[3-9]\\d|[1-3]\\d{2}|4000)$"
           }
         },
         {
@@ -485,7 +485,7 @@
           "type": "select"
         },
         {
-          "defaultValue": "0x1234567890AC",
+          "defaultValue": "0x112233445566",
           "id": "addr",
           "name": "Addr",
           "placeholder": "请输入addr",
@@ -695,7 +695,7 @@
           "type": "select"
         },
         {
-          "defaultValue": "0x1234567890AC",
+          "defaultValue": "0x112233445566",
           "id": "addr",
           "name": "Addr",
           "placeholder": "请输入addr",
@@ -812,7 +812,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "0x1812",
+          "defaultValue": "0x1122",
           "id": "svc_uuid",
           "name": "Svc uuid",
           "placeholder": "请输入服务 uuid",
@@ -843,7 +843,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "0x1812",
+          "defaultValue": "0x1122",
           "id": "svc_uuid",
           "name": "Svc uuid",
           "placeholder": "请输入服务 uuid",
@@ -933,7 +933,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "1",
+          "defaultValue": "14",
           "id": "service_handle",
           "name": "Service handle",
           "placeholder": "请输入服务句柄",
@@ -947,28 +947,28 @@
           "type": "input"
         },
         {
-          "defaultValue": "0x01",
+          "defaultValue": "0x03",
           "id": "permissions",
           "name": "Permissions",
           "placeholder": "请键入权限",
           "type": "input"
         },
         {
-          "defaultValue": "0x02",
+          "defaultValue": "0x00",
           "id": "properties",
           "name": "Properties",
           "placeholder": "请键入特性",
           "type": "input"
         },
         {
-          "defaultValue": "4",
+          "defaultValue": "1",
           "id": "value_len",
           "name": "Value len",
           "placeholder": "请输入值长度",
           "type": "input"
         },
         {
-          "defaultValue": "01010003",
+          "defaultValue": "0x01",
           "id": "value",
           "name": "Value",
           "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
@@ -1044,14 +1044,14 @@
           "type": "input"
         },
         {
-          "defaultValue": "1",
+          "defaultValue": "14",
           "id": "service_handle",
           "name": "Service handle",
           "placeholder": "请输入服务句柄",
           "type": "input"
         },
         {
-          "defaultValue": "0x2902",
+          "defaultValue": "0x2a4a",
           "id": "chara_uuid",
           "name": "Chara uuid",
           "placeholder": "请输入特征 uuid",
@@ -1065,14 +1065,14 @@
           "type": "input"
         },
         {
-          "defaultValue": "2",
+          "defaultValue": "1",
           "id": "value_len",
           "name": "Value len",
           "placeholder": "请输入值长度",
           "type": "input"
         },
         {
-          "defaultValue": "0100",
+          "defaultValue": "0x02",
           "id": "value",
           "name": "Value",
           "placeholder": "请输入值（值是长度为值长度两倍的字符串）",
@@ -1096,7 +1096,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "1",
+          "defaultValue": "14",
           "id": "server_handle",
           "name": "Server handle",
           "placeholder": "请输入服务句柄",
@@ -1211,21 +1211,21 @@
           "type": "input"
         },
         {
-          "defaultValue": "9",
+          "defaultValue": "14",
           "id": "attr_handle",
           "name": "Attr handle",
           "placeholder": "请输入偏移",
           "type": "input"
         },
         {
-          "defaultValue": "7",
+          "defaultValue": "1",
           "id": "value_len",
           "name": "Value len",
           "placeholder": "请输入值长度",
           "type": "input"
         },
         {
-          "defaultValue": "0x00000000000014",
+          "defaultValue": "0x11",
           "id": "value",
           "name": "Value",
           "placeholder": "请输入值",
@@ -1334,7 +1334,7 @@
       "category": "network",
       "parameters": [
         {
-          "defaultValue": "0x1122",
+          "defaultValue": "0x3434",
           "id": "uuid",
           "name": "Uuid",
           "placeholder": "请输入应用uuid",
@@ -1375,14 +1375,14 @@
           "type": "input"
         },
         {
-          "defaultValue": "1",
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接 id",
           "type": "input"
         },
         {
-          "defaultValue": "0x1212",
+          "defaultValue": "0x1122",
           "id": "uuid",
           "name": "Uuid",
           "placeholder": "请输入应用uuid",
@@ -1475,14 +1475,14 @@
           "type": "input"
         },
         {
-          "defaultValue": "1",
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接id",
           "type": "input"
         },
         {
-          "defaultValue": "0",
+          "defaultValue": "14",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入服务句柄",
@@ -1558,7 +1558,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "13",
+          "defaultValue": "17",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入句柄",
@@ -2702,11 +2702,11 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "1",
           "id": "service_handle",
           "name": "Service handle",
           "placeholder": "请输入服务Handle",
-          "type": "input",
-          "defaultValue": "1"
+          "type": "input"
         }
       ],
       "order": 85
@@ -2801,31 +2801,30 @@
           "type": "input"
         },
         {
+          "defaultValue": "0x1234",
           "id": "uuid",
           "name": "Uuid",
           "placeholder": "请输入属性 uuid",
-          "type": "input",
-          "defaultValue": "0x1234"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "start_hdl",
           "name": "Start hdl",
           "placeholder": "请输入开始句柄",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0x1234",
           "id": "end_hdl",
           "name": "End hdl",
           "placeholder": "请输入结束句柄",
-          "type": "input",
-          "defaultValue": "0x1234"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "type",
           "name": "type",
-          "placeholder": "请选择 SSAP 特征类型",
-          "type": "select",
           "options": [
             {
               "label": "0（特征值）",
@@ -2856,21 +2855,22 @@
               "value": "0xFF"
             }
           ],
-          "defaultValue": "0"
+          "placeholder": "请选择 SSAP 特征类型",
+          "type": "select"
         },
         {
+          "defaultValue": "2",
           "id": "value_len",
           "name": "Value len",
           "placeholder": "请输入数据长度",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0x0200",
           "id": "value",
           "name": "Value",
           "placeholder": "请输入数据",
-          "type": "input",
-          "defaultValue": "0x0200"
+          "type": "input"
         }
       ],
       "order": 87
@@ -2883,47 +2883,47 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入服务Handle",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "request_id",
           "name": "Request id",
           "placeholder": "请输入请求id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "1",
           "id": "status",
           "name": "status",
           "placeholder": "请输入发送响应原因",
-          "type": "input",
           "switchValues": {
             "false": "0",
             "true": "1"
           },
+          "type": "input",
           "validation": {
-            "pattern": "",
-            "message": ""
-          },
-          "defaultValue": "1"
+            "message": "",
+            "pattern": ""
+          }
         },
         {
+          "defaultValue": "2",
           "id": "value_len",
           "name": "Value len",
           "placeholder": "请输入数据长度",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0x0200",
           "id": "value",
           "name": "Value",
           "placeholder": "请输入数据",
-          "type": "input",
-          "defaultValue": "0x0200"
+          "type": "input"
         }
       ],
       "order": 88
@@ -2954,24 +2954,23 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "client_id",
           "name": "Client id",
           "placeholder": "请输入客户端id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "1",
           "id": "type",
           "name": "模式选择",
-          "placeholder": "请选择查找类型",
-          "type": "select",
           "options": [
             {
               "label": "0（服务结构）",
@@ -2986,28 +2985,29 @@
               "value": "3"
             }
           ],
-          "defaultValue": "1"
+          "placeholder": "请选择查找类型",
+          "type": "select"
         },
         {
+          "defaultValue": "0x1234",
           "id": "uuid",
           "name": "Uuid",
           "placeholder": "请输入uuid",
-          "type": "input",
-          "defaultValue": "0x1234"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "start_hdl",
           "name": "Start hdl",
           "placeholder": "请输入开始句柄",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0xff",
           "id": "end_hdl",
           "name": "End hdl",
           "placeholder": "请输入结束句柄",
-          "type": "input",
-          "defaultValue": "0xff"
+          "type": "input"
         }
       ],
       "order": 91
@@ -3020,31 +3020,30 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "client_id",
           "name": "Client id",
           "placeholder": "请输入客户端 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "2",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "type",
           "name": "模式选择",
-          "placeholder": "请选择客户端类型",
-          "type": "select",
           "options": [
             {
               "label": "0",
@@ -3059,21 +3058,22 @@
               "value": "3"
             }
           ],
-          "defaultValue": "0"
+          "placeholder": "请选择客户端类型",
+          "type": "select"
         },
         {
+          "defaultValue": "2",
           "id": "len",
           "name": "Len",
           "placeholder": "请输入写入数据长度",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0x8899",
           "id": "write_data",
           "name": "Write data",
           "placeholder": "请输入写入数据段",
-          "type": "input",
-          "defaultValue": "0x8899"
+          "type": "input"
         }
       ],
       "order": 92
@@ -3086,31 +3086,30 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "client_id",
           "name": "Client id",
           "placeholder": "请输入客户端 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "2",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "type",
           "name": "模式选择",
-          "placeholder": "请选择客户端类型",
-          "type": "select",
           "options": [
             {
               "label": "0",
@@ -3125,21 +3124,22 @@
               "value": "3"
             }
           ],
-          "defaultValue": "0"
+          "placeholder": "请选择客户端类型",
+          "type": "select"
         },
         {
+          "defaultValue": "2",
           "id": "len",
           "name": "Len",
           "placeholder": "请输入写入数据长度",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0x8899",
           "id": "write_data",
           "name": "Write data",
           "placeholder": "请输入写入数据段",
-          "type": "input",
-          "defaultValue": "0x8899"
+          "type": "input"
         }
       ],
       "order": 93
@@ -3152,20 +3152,21 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "client_id",
           "name": "Client id",
           "placeholder": "请输入客户端id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "251",
           "id": "mtu_size",
           "name": "数字输入",
           "placeholder": "请输入数字（最小值251最大值520）",
@@ -3173,15 +3174,14 @@
           "validation": {
             "message": "请输入数字",
             "pattern": "^[0-9]+$"
-          },
-          "defaultValue": "251"
+          }
         },
         {
+          "defaultValue": "1",
           "id": "version",
           "name": "Version",
           "placeholder": "请输入版本号",
-          "type": "input",
-          "defaultValue": "1"
+          "type": "input"
         }
       ],
       "order": 94
@@ -3194,31 +3194,30 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "client_id",
           "name": "Client id",
           "placeholder": "请输入客户端 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "2",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "type",
           "name": "模式选择",
-          "placeholder": "请选择客户端类型",
-          "type": "select",
           "options": [
             {
               "label": "0",
@@ -3233,21 +3232,22 @@
               "value": "3"
             }
           ],
-          "defaultValue": "0"
+          "placeholder": "请选择客户端类型",
+          "type": "select"
         },
         {
+          "defaultValue": "2",
           "id": "len",
           "name": "Len",
           "placeholder": "请输入写入数据长度",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
+          "defaultValue": "0x8899",
           "id": "write_data",
           "name": "Write data",
           "placeholder": "请输入写入数据段",
-          "type": "input",
-          "defaultValue": "0x8899"
+          "type": "input"
         }
       ],
       "order": 95
@@ -3260,31 +3260,29 @@
       "category": "nearlink",
       "parameters": [
         {
+          "defaultValue": "0",
           "id": "client_id",
           "name": "Client id",
           "placeholder": "请输入客户端 id（预留参数）",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "0",
           "id": "conn_id",
           "name": "Conn id",
           "placeholder": "请输入连接 id",
-          "type": "input",
-          "defaultValue": "0"
+          "type": "input"
         },
         {
+          "defaultValue": "2",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle（连接成功后的回调里会打印）",
-          "type": "input",
-          "defaultValue": "2"
+          "type": "input"
         },
         {
           "id": "type",
           "name": "模式选择",
-          "placeholder": "请选择客户端类型，取值：0/1/3",
-          "type": "select",
           "options": [
             {
               "label": "0",
@@ -3298,7 +3296,9 @@
               "label": "3",
               "value": "3"
             }
-          ]
+          ],
+          "placeholder": "请选择客户端类型，取值：0/1/3",
+          "type": "select"
         }
       ],
       "order": 96
@@ -3313,8 +3313,6 @@
         {
           "id": "scan_type",
           "name": "模式选择",
-          "placeholder": "请选择扫描类型",
-          "type": "select",
           "options": [
             {
               "label": "0（被动扫描）",
@@ -3324,21 +3322,23 @@
               "label": "1（主动扫描）",
               "value": "1"
             }
-          ]
+          ],
+          "placeholder": "请选择扫描类型",
+          "type": "select"
         },
         {
+          "defaultValue": "0x48",
           "id": "scan_interval",
           "name": "Scan interval",
           "placeholder": "请输入扫描间隔，取值范围[0x14, 0xFFFF]，单位 125 μs",
-          "type": "input",
-          "defaultValue": "0x48"
+          "type": "input"
         },
         {
+          "defaultValue": "0x48",
           "id": "scan_window",
           "name": "Scan window",
           "placeholder": "请输入扫描窗口，取值范围[0x14, 0xFFFF]，单位 125 μs",
-          "type": "input",
-          "defaultValue": "0x48"
+          "type": "input"
         }
       ],
       "order": 97
@@ -3353,8 +3353,8 @@
       "order": 98
     }
   ],
-  "exportTime": "2024-12-18T15:14:52.763Z",
+  "exportTime": "2024-12-18T18:28:28.644Z",
   "author": "Hny0305Lin",
-  "version": "1.0.1.normal-rc1",
+  "version": "1.0.2-rc1",
   "readme": "# 润和 HH-D03 开发板\n\n主板是基于海思星闪BS21的解决方案，支持BLE5.3协议和BLE Mesh功能，支持SLE1.0协议，支持OpenHarmony轻量系统，可广泛适用于智能家电等物联网智能终端领域。\n\n详情请见官网和PDF开发板规格说明书文件。"
 }
