@@ -48,8 +48,10 @@
 | BearPi_Pico_H3863 | Hi3863固件 | 小熊派 |
 | BearPi_Pico_H2821 | Hi2821固件 | 小熊派 |
 | BearPi_EBM_H63 | EBM_H63加密固件 | 小熊派 |
+| BearPi_EBM_H21E | EBM_H21E加密固件 | 小熊派 |
 | Haohanyh_Hi2821_Dev_Board | Hi2821固件 | 浩瀚银河 |
 | Haohanyh_Hi3863_NearLink_Gateway_Board | Hi3863固件 | 浩瀚银河 |
+| Haohanyh_Hi3863_NearLink_Gateway_ATBoard | Hi3863固件 | 浩瀚银河 |
 
 ### 目录结构
 
@@ -122,7 +124,7 @@
 
 为了提供更好的下载体验,我们欢迎提供镜像站服务。要求:
 
-- 保证 7x24 小时可用性(>92.87%)
+- 保证 7x24 小时只间断**不超过12小时**(>92.87%)
 - 5分钟内同步 Github 仓库
 - 遵守相关法律法规
 
