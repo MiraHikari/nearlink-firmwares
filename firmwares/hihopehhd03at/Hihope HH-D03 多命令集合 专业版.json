@@ -1736,14 +1736,14 @@
           "type": "select"
         },
         {
-          "defaultValue": "000000000000",
+          "defaultValue": "0x112233445566",
           "id": "own_addr_addr",
           "name": "Own Addr Addr",
           "placeholder": "请输入 SLE 本端设备地址",
           "type": "input",
           "validation": {
             "message": "请输入12位十六进制地址",
-            "pattern": "^[0-9A-Fa-f]{12}$"
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
           }
         },
         {
@@ -1764,14 +1764,14 @@
           "type": "select"
         },
         {
-          "defaultValue": "000000000000",
+          "defaultValue": "0x000000000000",
           "id": "peer_addr_addr",
           "name": "Peer Addr Addr",
           "placeholder": "请输入 SLE 对端设备地址",
           "type": "input",
           "validation": {
             "message": "请输入12位十六进制地址",
-            "pattern": "^[0-9A-Fa-f]{12}$"
+            "pattern": "^0x[0-9A-Fa-f]{12}$"
           }
         }
       ],
@@ -1975,7 +1975,7 @@
           }
         },
         {
-          "defaultValue": "0x000000000001",
+          "defaultValue": "0x112233445566",
           "id": "addr",
           "name": "addr",
           "placeholder": "请输入地址，12位十六进制地址",
@@ -2022,14 +2022,14 @@
           "type": "select"
         },
         {
-          "defaultValue": "0x000000000000",
+          "defaultValue": "112233445566",
           "id": "sle_addr",
           "name": "十六进制地址",
           "placeholder": "请设置 SLE 设备地址，12位十六进制地址",
           "type": "input",
           "validation": {
             "message": "请输入12位十六进制地址",
-            "pattern": "^0x[0-9A-Fa-f]{12}$"
+            "pattern": "^[0-9A-Fa-f]{12}$"
           }
         }
       ],
@@ -2726,7 +2726,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "2",
+          "defaultValue": "1",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle",
@@ -2777,7 +2777,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "0x0200",
+          "defaultValue": "0xAA55",
           "id": "value",
           "name": "Value",
           "placeholder": "请输入数据",
@@ -3013,6 +3013,51 @@
       "order": 91
     },
     {
+      "name": "AT+SSAPCFNDSTRU 发现 service（润和简化版）",
+      "command": "AT+SSAPCFNDSTRU={client_id},{conn_id},{type}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "client_id",
+          "name": "Client id",
+          "placeholder": "请输入客户端id",
+          "type": "input",
+          "defaultValue": "1"
+        },
+        {
+          "id": "conn_id",
+          "name": "Conn id",
+          "placeholder": "请输入连接 id",
+          "type": "input",
+          "defaultValue": "0"
+        },
+        {
+          "id": "type",
+          "name": "模式选择",
+          "placeholder": "请选择查找类型",
+          "type": "select",
+          "options": [
+            {
+              "label": "0（服务结构）",
+              "value": "0"
+            },
+            {
+              "label": "1（首要服务）",
+              "value": "1"
+            },
+            {
+              "label": "3（属性）",
+              "value": "3"
+            }
+          ],
+          "defaultValue": "0"
+        }
+      ],
+      "order": 92
+    },
+    {
       "name": "AT+SSAPCWRITECMD 客户端向服务端写入数据",
       "command": "AT+SSAPCWRITECMD={client_id},{conn_id},{handle},{type},{len},{write_data}",
       "shortcut": "",
@@ -3034,7 +3079,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "2",
+          "defaultValue": "1",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle",
@@ -3076,7 +3121,7 @@
           "type": "input"
         }
       ],
-      "order": 92
+      "order": 93
     },
     {
       "name": "AT+SSAPCWRITEREQ 客户端向服务端发送写请求",
@@ -3142,7 +3187,7 @@
           "type": "input"
         }
       ],
-      "order": 93
+      "order": 94
     },
     {
       "name": "AT+SSAPCEXCHINFO 客户端发起信息交换",
@@ -3184,7 +3229,7 @@
           "type": "input"
         }
       ],
-      "order": 94
+      "order": 95
     },
     {
       "name": "AT+SSAPCREADBYUUID 客户端通过 uuid 发送读请求",
@@ -3250,7 +3295,7 @@
           "type": "input"
         }
       ],
-      "order": 95
+      "order": 96
     },
     {
       "name": "AT+SSAPCREADREQ 客户端读取服务端属性数据",
@@ -3274,7 +3319,7 @@
           "type": "input"
         },
         {
-          "defaultValue": "2",
+          "defaultValue": "1",
           "id": "handle",
           "name": "Handle",
           "placeholder": "请输入属性 handle（连接成功后的回调里会打印）",
@@ -3298,47 +3343,8 @@
             }
           ],
           "placeholder": "请选择客户端类型，取值：0/1/3",
-          "type": "select"
-        }
-      ],
-      "order": 96
-    },
-    {
-      "name": "AT+SLESETSCANPAR 设置扫描参数",
-      "command": "AT+SLESETSCANPAR={scan_type},{scan_interval},{scan_window}",
-      "shortcut": "",
-      "type": "parameterized",
-      "category": "nearlink",
-      "parameters": [
-        {
-          "id": "scan_type",
-          "name": "模式选择",
-          "options": [
-            {
-              "label": "0（被动扫描）",
-              "value": "0"
-            },
-            {
-              "label": "1（主动扫描）",
-              "value": "1"
-            }
-          ],
-          "placeholder": "请选择扫描类型",
-          "type": "select"
-        },
-        {
-          "defaultValue": "0x48",
-          "id": "scan_interval",
-          "name": "Scan interval",
-          "placeholder": "请输入扫描间隔，取值范围[0x14, 0xFFFF]，单位 125 μs",
-          "type": "input"
-        },
-        {
-          "defaultValue": "0x48",
-          "id": "scan_window",
-          "name": "Scan window",
-          "placeholder": "请输入扫描窗口，取值范围[0x14, 0xFFFF]，单位 125 μs",
-          "type": "input"
+          "type": "select",
+          "defaultValue": "0"
         }
       ],
       "order": 97
@@ -3353,8 +3359,8 @@
       "order": 98
     }
   ],
-  "exportTime": "2024-12-18T18:28:28.644Z",
+  "exportTime": "2024-12-19T15:45:14.376Z",
   "author": "Hny0305Lin",
-  "version": "1.0.2-rc1",
+  "version": "1.0.2-rc3",
   "readme": "# 润和 HH-D03 开发板\n\n主板是基于海思星闪BS21的解决方案，支持BLE5.3协议和BLE Mesh功能，支持SLE1.0协议，支持OpenHarmony轻量系统，可广泛适用于智能家电等物联网智能终端领域。\n\n详情请见官网和PDF开发板规格说明书文件。"
 }
