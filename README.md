@@ -49,9 +49,12 @@
 | BearPi_Pico_H2821 | Hi2821固件 | 小熊派 |
 | BearPi_EBM_H63 | EBM_H63加密固件 | 小熊派 |
 | BearPi_EBM_H21E | EBM_H21E加密固件 | 小熊派 |
+| P-E528H-WS63 | Hi3863固件 | 天工聚创 |
 | Haohanyh_Hi2821_Dev_Board | Hi2821固件 | 浩瀚银河 |
 | Haohanyh_Hi3863_NearLink_Gateway_Board | Hi3863固件 | 浩瀚银河 |
 | Haohanyh_Hi3863_NearLink_Gateway_ATBoard | Hi3863固件 | 浩瀚银河 |
+
+- 欢迎更多的星闪开发板厂商们，提供您们的产品型号或产品设备，我们会为您们适配配套服务，和大量时间的送测检查。
 
 ### 目录结构
 
