@@ -337,6 +337,38 @@
     ],
     "readmeFile": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/slekeyboard/readme.md"
   },
+  "tiangonixm528h": {
+    "online": true,
+    "imageUrl": "https://s2.loli.net/2024/12/20/qFdJPz7SnUtXWjc.jpg",
+    "packageName": "天工聚创 P-E528H-WS63 AT固件",
+    "description": "天工聚创自研星闪开发板, 搭载Hi3863芯片, 为星闪发展加油!",
+    "author": "TIANGONIX",
+    "authorAvatar": "",
+    "needCode": false,
+    "categories": [
+      "国产替代"
+    ],
+    "chips": [
+      "Hi3863"
+    ],
+    "brands": [
+      "天工聚创"
+    ],
+    "files": [
+      {
+        "name": "P-E528H-WS63 AT固件",
+        "filename": "WS63-XF_AT-2.0.1-alpha.fwpkg",
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/tiangonixm528h/WS63-XF_AT-2.0.1-alpha.fwpkg"
+      }
+    ],
+    "serialcuts": [
+      {
+        "name": "P-E528H-WS63 多命令集合 专业版",
+        "filename": "TIANGONIX P-E528H-WS63 多命令集合 专业版.json",
+        "rawLink": "https://haohanyh-ctcc.gcxstudio.cn/firmwares/tiangonixm528h/TIANGONIX P-E528H-WS63 多命令集合 专业版.json"
+      }
+    ]
+  },
   "ws63haohanyh": {
     "online": true,
     "imageUrl": "https://s2.loli.net/2024/12/04/qOBvsbZ1YjSumUa.png",
