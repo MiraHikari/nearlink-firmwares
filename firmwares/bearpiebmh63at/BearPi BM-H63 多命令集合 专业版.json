@@ -321,7 +321,7 @@
       "category": "nearlink",
       "parameters": [
         {
-          "defaultValue": "ebef339b8d5d",
+          "defaultValue": "111122220001",
           "id": "mac",
           "name": "客户端 MAC 地址",
           "placeholder": "请输入客户端MAC地址",
@@ -428,6 +428,44 @@
       "order": 17
     },
     {
+      "name": "AT+SSETNAME 设置服务端设备名称",
+      "command": "AT+SSETNAME={name}",
+      "shortcut": "",
+      "type": "parameterized",
+      "category": "nearlink",
+      "parameters": [
+        {
+          "id": "name",
+          "name": "Name",
+          "placeholder": "请输入服务端名称，最大 31 字节",
+          "type": "input",
+          "defaultValue": "SERVER",
+          "validation": {
+            "pattern": "^[\\x20-\\x7E]{1,31}$"
+          }
+        }
+      ],
+      "order": 18
+    },
+    {
+      "name": "AT+SSETNAME? 查询服务端设备名称",
+      "command": "AT+SSETNAME?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 19
+    },
+    {
+      "name": "AT+SSETNAME=? 测试服务端设备名称",
+      "command": "AT+SSETNAME=?",
+      "shortcut": "",
+      "type": "normal",
+      "category": "nearlink",
+      "parameters": [],
+      "order": 20
+    },
+    {
       "name": "AT+SSERVER 服务端开启服务",
       "command": "AT+SSERVER={mode}",
       "shortcut": "8",
@@ -452,7 +490,7 @@
           "type": "select"
         }
       ],
-      "order": 18
+      "order": 21
     },
     {
       "name": "AT+SSERVER? 服务端开启查询",
@@ -460,7 +498,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 19
+      "order": 22
     },
     {
       "name": "AT+SSERVER=? 服务端测试开启",
@@ -468,7 +506,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 20
+      "order": 23
     },
     {
       "name": "AT+SCLIST 服务端获取用户连接列表",
@@ -476,7 +514,7 @@
       "shortcut": "9",
       "type": "normal",
       "category": "nearlink",
-      "order": 21
+      "order": 24
     },
     {
       "name": "AT+SSEND 服务端发送 HEX 数据",
@@ -486,7 +524,7 @@
       "category": "network",
       "parameters": [
         {
-          "defaultValue": "",
+          "defaultValue": "CLIENT1",
           "id": "name",
           "name": "字符串",
           "placeholder": "请输入客户端名称",
@@ -500,7 +538,7 @@
           "type": "input"
         }
       ],
-      "order": 22
+      "order": 25
     },
     {
       "name": "AT+SSEND=? 服务端测试 HEX 数据",
@@ -508,7 +546,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "network",
-      "order": 23
+      "order": 26
     },
     {
       "name": "AT+SSENDSTR 服务端发送字符串数据",
@@ -532,7 +570,7 @@
           "type": "input"
         }
       ],
-      "order": 24
+      "order": 27
     },
     {
       "name": "AT+SSENDSTR=? 服务端测试字符串数据",
@@ -540,7 +578,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "network",
-      "order": 25
+      "order": 28
     },
     {
       "name": "AT+SSENDALL 服务端向所有连接设备发送HEX数据",
@@ -557,7 +595,7 @@
           "type": "input"
         }
       ],
-      "order": 26
+      "order": 29
     },
     {
       "name": "AT+SSENDALLSTR 服务端向所有连接设备发送字符串数据",
@@ -574,7 +612,7 @@
           "type": "input"
         }
       ],
-      "order": 27
+      "order": 30
     },
     {
       "name": "AT+SBLACK 服务端黑名单管理",
@@ -608,7 +646,7 @@
           "type": "input"
         }
       ],
-      "order": 28
+      "order": 31
     },
     {
       "name": "AT+SRADIOFR 服务端设置广播间隔时间",
@@ -625,7 +663,7 @@
           "type": "input"
         }
       ],
-      "order": 29
+      "order": 32
     },
     {
       "name": "AT+SRADIOFRE? 服务端查询广播间隔时间",
@@ -633,7 +671,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "network",
-      "order": 30
+      "order": 33
     },
     {
       "name": "AT+SKILLCLIENT 服务端断开客户端连接",
@@ -650,7 +688,7 @@
           "type": "input"
         }
       ],
-      "order": 31
+      "order": 34
     },
     {
       "name": "+SRECVDATA 服务端接收数据",
@@ -674,7 +712,7 @@
           "type": "input"
         }
       ],
-      "order": 32
+      "order": 35
     },
     {
       "name": "AT+CKEY 设置客户端密钥",
@@ -707,7 +745,7 @@
           "type": "input"
         }
       ],
-      "order": 33
+      "order": 36
     },
     {
       "name": "AT+CKEY? 查询客户端密钥",
@@ -715,7 +753,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 34
+      "order": 37
     },
     {
       "name": "AT+CKEY=? 测试客户端密钥",
@@ -723,7 +761,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 35
+      "order": 38
     },
     {
       "name": "AT+CSETNAM 设置客户端设备名称",
@@ -740,7 +778,7 @@
           "type": "input"
         }
       ],
-      "order": 36
+      "order": 39
     },
     {
       "name": "AT+CSETNAME? 查询客户端设备名称",
@@ -748,7 +786,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 37
+      "order": 40
     },
     {
       "name": "AT+CCONNECT 客户端连接服务端",
@@ -765,7 +803,7 @@
           "type": "input"
         }
       ],
-      "order": 38
+      "order": 41
     },
     {
       "name": "AT+CCONNECT? 查询客户端连接服务端",
@@ -773,7 +811,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 39
+      "order": 42
     },
     {
       "name": "AT+CSLIST 客户端获取服务端列表",
@@ -781,7 +819,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "nearlink",
-      "order": 40
+      "order": 43
     },
     {
       "name": "AT+CSEND 客户端发送 HEX 数据",
@@ -798,7 +836,7 @@
           "type": "input"
         }
       ],
-      "order": 41
+      "order": 44
     },
     {
       "name": "AT+CSEND=? 客户端测试 HEX 数据",
@@ -806,7 +844,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "network",
-      "order": 42
+      "order": 45
     },
     {
       "name": "AT+CSENDSTR 客户端发送字符串数据",
@@ -823,7 +861,7 @@
           "type": "input"
         }
       ],
-      "order": 43
+      "order": 46
     },
     {
       "name": "AT+CSENDSTR=? 客户端测试字符串数据",
@@ -831,7 +869,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "network",
-      "order": 44
+      "order": 47
     },
     {
       "name": "AT+CDISCONNECT 客户端断开与服务端连接",
@@ -839,7 +877,7 @@
       "shortcut": "",
       "type": "normal",
       "category": "network",
-      "order": 45
+      "order": 48
     },
     {
       "name": "+CRECVDATA 客户端接收数据",
@@ -856,10 +894,11 @@
           "type": "input"
         }
       ],
-      "order": 46
+      "order": 49
     }
   ],
-  "exportTime": "2024-11-23T17:54:00.628Z",
+  "exportTime": "2024-12-20T08:00:33.458Z",
   "author": "Hny0305Lin",
-  "version": "1.0.2-rc1"
+  "version": "1.0.2-rc5",
+  "readme": "# 小熊派 BM-H63 开发板\n\nBearPi-BM H63是一款基于高度集成2.4GHz Wi-Fi6 、BLE、SLE为主控芯片的核心板，具有灵活的数字接口，集成高性能 32bit 微处理器（MCU），硬件安全引擎以及丰富的外设接口，外设接口包括 SPI、UART、I2C、PWM、GPIO，支持 6 路 13bit 分辨率 ADC，内置 SRAM 和合封 Flash，并支持在 Flash 上运行程序。\n\n目标用户群体：企业开发者、个人AT开发者\n\n# 历史版本\n\n## 1.0.2-rc5（2024-12-20 16：00)\n- 修订大量在文档出现的但没添加进的AT命令与AT默认值\n- 修订部分星闪SLE通信测试的AT命令默认值问题\n- 修订部分细节问题\n\n## 1.0.2-rc1（2024-11-24）\n- 第一版公开版专业版文件，新手使用可以自行删除无需使用的集合后，保留成自己使用的\n- 修订AT指令问题"
 }
